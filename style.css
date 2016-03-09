@@ -1,11 +1,11 @@
-body {
-  background-color: whitesmoke;
-}
 
+body {
+  background-color: rgb(50, 150, 180);
+}
 td {
   width: 30%;
   height: 39px;
-  background-color: wheat;
+  background-color: white;
   font-family: Arial;
 }
 
@@ -46,45 +46,29 @@ a:hover {
 }
 
 
-@media(max-device-width: 700px) {
-  td {
-    height: 180px;
-    background-color: wheat;
-    font-family: Arial;
-    font-size: 70px;
-  }
-  
-  table {
-    position: relative;
-  }
-  
-  h1 {
-    position: relative;
-    left: 150px;
-    font-family: Arial;
-    font-size: 50px;
-  }
-  
-  p {
-    font-family: verdana;
-    position: relative;
-    left: 120px;
-    font-size: 21px;
-  }
-  
-  td a {
-    text-decoration: none;
-    position: relative;
-    left: 30px;
-    font-size: 40px;
-    color: darkblue;/*
-    height: 150px;
-    width: 80%;
-    background-color: yellow;*/
-  }
-  
-  #konec {
-  	position: relative;
-  	height: 200px;
-  }
+
+@media(max-device-width: 730px) {
+
+td {
+  height: 180px;
+  background-color: white;
+  font-family: Arial;
+  font-size: 70px;
+}
+table {
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  left: 150px;
+  font-family: Arial;
+  font-size: 50px;
+}
+
+p {
+  font-family: verdana;
+  position: relative;
+  left: 120px;
+  font-size: 21px;
 }
