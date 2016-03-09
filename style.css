@@ -2,6 +2,7 @@
 body {
   background-color: rgb(50, 150, 180);
 }
+
 td {
   width: 30%;
   height: 39px;
@@ -48,27 +49,28 @@ a:hover {
 
 
 @media(max-device-width: 730px) {
+  td {
+    height: 180px;
+    background-color: white;
+    font-family: Arial;
+    font-size: 70px;
+  }
 
-td {
-  height: 180px;
-  background-color: white;
-  font-family: Arial;
-  font-size: 70px;
-}
-table {
-  position: relative;
-}
+  table {
+    position: relative;
+  }
+  
+  h1 {
+    position: relative;
+    left: 150px;
+    font-family: Arial;
+    font-size: 50px;
+  }
 
-h1 {
-  position: relative;
-  left: 150px;
-  font-family: Arial;
-  font-size: 50px;
-}
-
-p {
-  font-family: verdana;
-  position: relative;
-  left: 120px;
-  font-size: 21px;
+  p {
+    font-family: verdana;
+    position: relative;
+    left: 120px;
+    font-size: 21px;
+  }
 }
