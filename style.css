@@ -1,5 +1,5 @@
 body{
-background-color: rgb(66, 133, 244);
+background-color: rgb(50, 150, 180);
 }
 td{
 width: 30%;
@@ -44,7 +44,7 @@ a:hover{
 td{/*
 width: 35%;*/
 height: 180px;
-background-color: wheat;
+background-color: white;
 font-family: Arial;
 font-size: 70px;
 }
