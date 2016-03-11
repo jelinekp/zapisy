@@ -80,4 +80,18 @@ a:hover {
     left: 120px;
     font-size: 21px;
   }
+  .link {
+  background-color: white;
+  font-family: Arial;
+  display: block;
+  height: 120px;
+  line-height: 120px;
+}
+
+.link-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 60px;
+  padding-right: 60px;
+}
 }
