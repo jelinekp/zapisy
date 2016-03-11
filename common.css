@@ -3,8 +3,18 @@ body {
 }
 
 p {
-  font-family: Verdana;
+  font-family: Verdana, Arial;
   position: relative;
+}
+
+a{
+	color: #424242;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #212121;
 }
 
 table {
@@ -21,7 +31,7 @@ td {
 
 .link {
   background-color: white;
-  font-family: Arial;
+  font-family: Arial, Verdana;
   position: relative;
   z-index: 2;
   display: inline-block;
