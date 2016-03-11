@@ -33,8 +33,6 @@ td a {
   background-color: white;
   font-family: Arial;
   display: block;
-  height: 39px;
-  line-height: 39px;
 }
 
 .link-text {
@@ -53,14 +51,27 @@ a:hover {
 	height: 500px;
 }
 
-
+@media (min-width: 730px) {
+  .link {
+    height: 39px;
+    line-height: 39px;
+  }
+}
 
 @media(max-width: 730px) {
   td {
-    height: 180px;
     background-color: white;
     font-family: Arial;
     font-size: 70px;
+  }
+
+  .link {
+    line-height: 1.5em;
+  }
+
+  .link-text {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   table {
