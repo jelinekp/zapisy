@@ -44,8 +44,8 @@ td a {
   padding-right: 30px;
 }
 
-a:hover {
-	text-decoration: underline;
+.link:hover {
+	background-color: #F5F5F5;
 }
 
 #konec {
