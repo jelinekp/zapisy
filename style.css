@@ -5,7 +5,7 @@ body {
 
 table {
   position: relative;
-  left: 118px;
+  left: 117px;
 }
 
 h1 {
@@ -22,11 +22,21 @@ p {
   font-size: 17px;
 }
 
+a{
+	color: #424242;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #212121;
+}
+
 td a {
   text-decoration: none;
   position: relative;
   font-size: 18px;
-  color: darkblue;
+  color: black;
 }
 
 .link {
