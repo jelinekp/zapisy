@@ -1,24 +1,14 @@
-
-body {
-  background-color: #64B5F6;
-}
-
 table {
   position: relative;
-  left: 70px;
 }
 
 h1 {
   position: relative;
-  left: 150px;
   font-family: Arial;
   font-size: 40px;
 }
 
 p {
-  font-family: verdana;
-  position: relative;
-  left: 120px;
   font-size: 17px;
 }
 
@@ -37,12 +27,11 @@ td a {
 .link-text {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 16px 32px;
 }
 
-.link:hover {
-  background-color: #F5F5F5;
+.link-archive-text {
+  padding-left: 32px;
 }
 
 #konec {
@@ -50,92 +39,9 @@ td a {
   height: 500px;
 }
 
-@media (min-width: 730px) {
-  .link {
-    height: 39px;
-    line-height: 39px;
-  }
-}
-
-@media (max-width: 730px) {
-
-  td {
-    width: 100%;
-    font-family: Arial;
-    border: none;
-    border-spacing: none;
-  }
-
-  .link {
-    position: relative;
-    z-index: 2;
-    border-radius: 2px;
-    box-shadow: 1px 1px 1px 1px #3485C9;
-    width: 100%;
-    display: inline-block;
-    height: 100%;
-  }
-
-  .link-text {
-    z-index: 3;
-    color: black;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  .link-archive {
-    z-index: 4;
-    height: 54px;
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: auto;
-    line-height: normal;
-    vertical-align: middle;
-    color: gray;
-  }
-
-  .link-archive:hover {
-    background-color: rgba(127, 127, 127, 0.1);
-  }
-
-  .link-archive-text {
-    position: relative;
-    top: 2px;
-    top: 18px;
-    padding-right: 30px;
-    padding-left: 10px;
-    z-index: 5;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  table {
-    border-spacing: none;
-    border-width: 0px;
-    width: 100%;
-    position: relative;
-    left: 0px;
-  }
-
-  h1 {
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    font-family: Arial;
-    font-size: 50px;
-  }
-
-  p {
-    text-align: justify;
-    font-family: verdana;
-    position: relative;
-    left: 0px;
-    font-size: 16px;
-  }
-
-  #konec {
-    display: none;
-  }
+#container {
+  background-color: #64B5F6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
