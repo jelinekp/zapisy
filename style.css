@@ -42,13 +42,13 @@ td a {
   padding-right: 30px;
 }
 
-a:hover {
-	text-decoration: underline;
+.link:hover {
+  background-color: #F5F5F5;
 }
 
 #konec {
-	position: relative;
-	height: 500px;
+  position: relative;
+  height: 500px;
 }
 
 @media (min-width: 730px) {
@@ -62,7 +62,7 @@ a:hover {
   td {
     background-color: white;
     font-family: Arial;
-    font-size: 70px;
+    font-size: 100px;
   }
 
   .link {
