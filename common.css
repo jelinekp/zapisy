@@ -8,13 +8,12 @@ p {
 }
 
 a {
-	color: #424242;
+	color: #727272;
 	text-decoration: none;
 }
 
 a:hover{
 	text-decoration: underline;
-	color: #212121;
 }
 
 table {
