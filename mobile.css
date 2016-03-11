@@ -23,18 +23,8 @@ h1 {
 
 p {
   text-align: justify;
-  font-family: Verdana, Arial;
-  position: relative;
   left: 0px;
   font-size: 16px;
-}
-
-.link:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.link-archive:hover {
-  background-color: rgba(0, 0, 0, 0);
 }
 
 #konec {
