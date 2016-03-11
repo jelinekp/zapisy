@@ -57,10 +57,10 @@ a:hover {
 
 @media(max-device-width: 730px) {
   td {
-    height: 180px;
+    height: 140px;
     background-color: white;
     font-family: Arial;
-    font-size: 70px;
+    font-size: 100px;
   }
 
   table {
@@ -84,8 +84,8 @@ a:hover {
   background-color: white;
   font-family: Arial;
   display: block;
-  height: 120px;
-  line-height: 120px;
+  height: 140px;
+  line-height: 140px;
 }
 
 .link-text {
