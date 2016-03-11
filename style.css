@@ -24,7 +24,6 @@ p {
 
 td a {
   text-decoration: none;
-  position: relative;
   font-size: 18px;
   color: darkblue;
 }
@@ -58,23 +57,64 @@ td a {
   }
 }
 
-@media(max-width: 730px) {
+@media (max-width: 730px) {
+
   td {
-    background-color: white;
+    width: 100%;
     font-family: Arial;
-    font-size: 100px;
+    border: none;
+    border-spacing: none;
   }
 
   .link {
-    line-height: 1.5em;
+    position: relative;
+    z-index: 2;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px #3485C9;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
   }
 
   .link-text {
+    z-index: 3;
+    color: black;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
+  .link-archive {
+    z-index: 4;
+    height: 54px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: auto;
+    line-height: normal;
+    vertical-align: middle;
+    color: gray;
+  }
+
+  .link-archive:hover {
+    background-color: rgba(127, 127, 127, 0.1);
+  }
+
+  .link-archive-text {
+    position: relative;
+    top: 2px;
+    top: 18px;
+    padding-right: 30px;
+    padding-left: 10px;
+    z-index: 5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   table {
+    border-spacing: none;
+    border-width: 0px;
+    width: 100%;
     position: relative;
     left: 0px;
   }
