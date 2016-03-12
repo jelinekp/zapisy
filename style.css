@@ -39,23 +39,23 @@ p {
 }
 
 #subject-icon-chemistry {
-  background-image: url('chemistry.png');
+  background-image: url('img/chemistry.png');
 }
 
 #subject-icon-civics {
-  background-image: url('civics.png');
+  background-image: url('img/civics.png');
 }
 
 #subject-icon-biology {
-  background-image: url('biology.png');
+  background-image: url('img/biology.png');
 }
 
 #subject-icon-german {
-  background-image: url('german.png');
+  background-image: url('img/german.png');
 }
 
 #subject-icon-history {
-  background-image: url('history.png');
+  background-image: url('img/history.png');
 }
 
 #konec {
