@@ -31,3 +31,11 @@ p {
   position: relative;
   height: 150px;
 }
+
+.link-text {
+  padding-left: 32px;
+}
+
+.subject-icon {
+  display: none;
+}

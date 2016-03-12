@@ -13,7 +13,6 @@ p {
 }
 
 .link {
-  background-color: white;
   font-family: Arial;
   display: block;
 }
@@ -22,12 +21,41 @@ p {
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
-  padding: 16px 32px;
+  padding: 16px 64px;
 }
 
 .link-archive-text {
   font-size: 18px;
   padding-left: 32px;
+}
+
+.subject-icon {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+#subject-icon-chemistry {
+  background-image: url('chemistry.png');
+}
+
+#subject-icon-civics {
+  background-image: url('civics.png');
+}
+
+#subject-icon-biology {
+  background-image: url('biology.png');
+}
+
+#subject-icon-german {
+  background-image: url('german.png');
+}
+
+#subject-icon-history {
+  background-image: url('history.png');
 }
 
 #konec {
