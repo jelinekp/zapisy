@@ -39,3 +39,39 @@ p {
 .subject-icon {
   display: none;
 }
+
+@media (min-width: 320px) {
+  .link-text {
+    padding-left: 64px;
+  }
+
+  .subject-icon {
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  #subject-icon-chemistry {
+    background-image: url('img/chemistry.png');
+  }
+
+  #subject-icon-civics {
+    background-image: url('img/civics.png');
+  }
+
+  #subject-icon-biology {
+    background-image: url('img/biology.png');
+  }
+
+  #subject-icon-german {
+    background-image: url('img/german.png');
+  }
+
+  #subject-icon-history {
+    background-image: url('img/history.png');
+  }
+}
