@@ -75,3 +75,13 @@ td {
   display: inline-block;
   vertical-align: middle;
 }
+
+.subject-icon {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

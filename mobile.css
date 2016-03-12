@@ -47,16 +47,10 @@ p {
 
   .subject-icon {
     display: block;
-    position: absolute;
-    top: 11px;
-    left: 16px;
-    width: 32px;
-    height: 32px;
-    background-repeat: no-repeat;
   }
 
   #subject-icon-chemistry {
-    background-image: url('img/chemistry.png');
+    background-image: url('img/chemistry.svg');
   }
 
   #subject-icon-civics {
