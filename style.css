@@ -49,6 +49,10 @@ p {
   background-image: url('img/history.svg');
 }
 
+#subject-icon-physics {
+  background-image: url('img/physics.svg');
+}
+
 #konec {
   position: relative;
   height: 400px;
