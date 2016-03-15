@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.839192"
-     inkscape:cx="14.065133"
+     inkscape:cx="12.893445"
      inkscape:cy="14.66956"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,43 +56,49 @@
     <ellipse
        style="fill:none;stroke:#000000;stroke-width:14.4497776"
        id="path3361"
-       cx="251.33313"
-       cy="251.54408"
+       cx="255.89453"
+       cy="244.24585"
        rx="76.175385"
        ry="220" />
     <ellipse
        style="fill:none;stroke:#000000;stroke-width:14.4497776"
        id="path3361-5"
-       cx="352.4986"
-       cy="-92.532776"
+       cx="348.45883"
+       cy="-100.13219"
        rx="76.175385"
        ry="220"
        transform="matrix(0.5,0.8660254,-0.8660254,0.5,0,0)" />
     <ellipse
        style="fill:none;stroke:#000000;stroke-width:14.4497776"
        id="path3361-2"
-       cx="-102.74776"
-       cy="349.51184"
+       cx="-94.146599"
+       cy="349.81302"
        rx="76.175385"
        ry="220"
        transform="matrix(0.5,-0.8660254,0.8660254,0.5,0,0)" />
     <circle
        style="fill:#000000;stroke:#000000;stroke-width:14.4497776"
        id="path3393"
-       cx="444.73651"
-       cy="141.61432"
+       cx="449.29791"
+       cy="134.31609"
        r="24" />
     <circle
        style="fill:#000000;stroke:#000000;stroke-width:14.4497776"
        id="path3393-0"
-       cx="206.17529"
-       cy="422.59656"
+       cx="210.73669"
+       cy="415.29831"
        r="24" />
     <circle
        style="fill:#000000;stroke:#000000;stroke-width:14.4497776"
        id="path3393-4"
-       cx="73.894669"
-       cy="210.94762"
+       cx="78.45607"
+       cy="203.64938"
        r="24" />
+    <circle
+       style="fill:#000000;stroke:#000000;stroke-width:14.4497776"
+       id="path3524"
+       cx="256"
+       cy="256"
+       r="32" />
   </g>
 </svg>
