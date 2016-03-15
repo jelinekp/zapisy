@@ -50,6 +50,10 @@ p {
 }
 
 #subject-icon-physics {
+  background-image: url('img/physics.svg');
+}
+
+.link-hover-hack:hover > #subject-icon-physics {
   background-image: url('img/physics-animated.svg');
 }
 
