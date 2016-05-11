@@ -53,6 +53,10 @@ p {
   background-image: url('img/physics.svg');
 }
 
+#subject-icon-music {
+  background-image: url('img/music.svg');
+}
+
 .link-hover-hack:hover > #subject-icon-chemistry {
   background-image: url('img/chemistry-animated.svg');
 }
