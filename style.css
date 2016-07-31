@@ -2,13 +2,6 @@ table {
   position: relative;
 }
 
-h1 {
-  position: relative;
-  font-family: Roboto, Arial;
-  font-size: 40px;
-  left: 10px;
-}
-
 p {
   font-size: 17px;
   left: 10px;
