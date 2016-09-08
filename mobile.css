@@ -75,4 +75,12 @@ p {
   #subject-icon-music {
     background-image: url('img/music.svg');
   }
+
+  #subject-icon-book {
+    background-image: url('img/book.svg');
+  }
+
+  #subject-icon-it {
+    background-image: url('img/it.svg');
+  }
 }
