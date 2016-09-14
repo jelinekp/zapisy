@@ -1,6 +1,6 @@
 td {
   width: 100%;
-  font-family: Arial;
+  font-family: Roboto, Arial;
   border: none;
   border-spacing: none;
 }
@@ -17,7 +17,7 @@ h1 {
   left: 0px;
   width: 100%;
   text-align: center;
-  font-family: Arial;
+  font-family: Roboto, Arial;
   font-size: 32px;
 }
 
@@ -82,5 +82,17 @@ p {
 
   #subject-icon-it {
     background-image: url('img/it.svg');
+  }
+
+  #subject-icon-style {
+    background-image: url('img/style.svg');
+  }
+
+  #subject-icon-grammar {
+    background-image: url('img/grammar.svg');
+  }
+
+  #subject-icon-geography {
+    background-image: url('img/geography.svg');
   }
 }
