@@ -95,4 +95,9 @@ p {
   #subject-icon-geography {
     background-image: url('img/geography.svg');
   }
+
+  #subject-icon-english {
+    background-image: url('img/english.svg');
+  }
+
 }
