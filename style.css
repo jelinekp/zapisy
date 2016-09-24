@@ -95,3 +95,14 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 1600px) {
+  #examsContainer {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: #80D0FF;
+    position: relative;
+    top: 10px;
+  }
+}
