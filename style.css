@@ -4,7 +4,7 @@ table {
 
 h1 {
   position: relative;
-  font-family: Arial;
+  font-family: Roboto, Arial;
   font-size: 40px;
 }
 
@@ -13,7 +13,7 @@ p {
 }
 
 .link {
-  font-family: Arial;
+  font-family: Roboto, Arial;
   display: block;
 }
 
@@ -55,6 +55,29 @@ p {
 
 #subject-icon-music {
   background-image: url('img/music.svg');
+}
+#subject-icon-book {
+  background-image: url('img/book.svg');
+}
+
+#subject-icon-it {
+  background-image: url('img/it.svg');
+}
+
+#subject-icon-style {
+  background-image: url('img/style.svg');
+}
+
+#subject-icon-grammar {
+  background-image: url('img/grammar.svg');
+}
+
+#subject-icon-geography {
+  background-image: url('img/geography.svg');
+}
+
+#subject-icon-english {
+  background-image: url('img/english.svg');
 }
 
 .link-hover-hack:hover > #subject-icon-chemistry {
