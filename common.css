@@ -3,7 +3,7 @@ body {
 }
 
 p {
-  font-family: Verdana, Arial;
+  font-family: Roboto, Verdana, Arial;
   position: relative;
 }
 
@@ -30,8 +30,16 @@ td {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+.smoother{
+  color: grey;
+}
+
+.smoother-archive {
+  color: lightgray;
+}
+
 .link {
-  font-family: Arial, Verdana;
+  font-family: Roboto, Arial, Verdana;
   position: relative;
   z-index: 2;
   display: inline-block;
