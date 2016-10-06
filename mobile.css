@@ -14,7 +14,6 @@ table {
 }
 
 h1 {
-  left: 10px;
   width: 100%;
   text-align: center;
   font-family: Roboto, Arial;
@@ -23,9 +22,7 @@ h1 {
 
 p {
   text-align: justify;
-  left: 10px;
   font-size: 16px;
-  width: 96%;
 }
 
 #konec {
