@@ -35,10 +35,12 @@ function make_exams() {
   $exams = $query->fetchAll();
 
   foreach($exams as $exam) {
-    echo "<tr><td class=\"exam_item\">";
+    echo "<tr><td>";
+    echo "<a class=\"link-exam\" href=\"exam.php?id=" . $exam["_ID"] . "\"><div class=\"exam_item\">";
     echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
     echo "<span class=\"exam_date\">" . date("j.n.Y", strtotime($exam["exam_date"])) . "</span>";
+    echo "</div></a>";
     echo "</td></tr>\n";
   }
 }
