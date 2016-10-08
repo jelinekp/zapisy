@@ -46,6 +46,5 @@
         <?php make_exams(); ?>
       </table>
     </div>
-    <div id="konec" />
   </body>
 </html>
