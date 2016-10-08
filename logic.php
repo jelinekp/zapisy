@@ -13,7 +13,7 @@ function make_subjects() {
     }
     echo "</span></div>";
     if(isset($sub["icon"])) {
-      echo "<div class=\"subject-icon\" style=\"background-image: url('" . $sub["icon"] . "')\">";
+      echo "<div class=\"subject-icon\" style=\"background-image: url('" . $sub["icon"] . "')\"></div>";
     }
     if(isset($sub["archive"])) {
       echo "<a href=\"" . $sub["archive"] . "\"><div class=\"link-archive\">";
