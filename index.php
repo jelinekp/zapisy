@@ -34,7 +34,8 @@
         Hlavní contributoři: <a href="https://plus.google.com/117073341275292426772">baxit</a>, <a href="http://jelinekp.wz.cz/">jelinekp</a>
         a <a href="https://markaos.cz/">Markaos</a><br />
         Mobilní aplikace (i pro offline zápisy):
-        <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Dokumenty (Google Play)</a><br>
+        Dokumenty Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Google Play</a>,
+        <a href="https://itunes.apple.com/cz/app/google-docs/id842842640?mt=8">App Store</a>)<br>
         <a href="https://github.com/jelinekp/zapisy">Projekt na GitHubu (jelinekp/zapisy)</a>
         <div id="examsContainer">
           <h2>Písemky</h2>
