@@ -15,7 +15,8 @@ foreach($exams as $exam) {
   echo "{";
     echo '"subject":"' . $exam["subject"] . '",';
     echo '"range":"' . $exam["range"] . '",';
-    echo '"date":"' . date("j.n.Y", strtotime($exam["exam_date"])) . '"';
+    echo '"date":"' . date("j.n.Y", strtotime($exam["exam_date"])) . '",';
+    echo '"notes":"' . $exam["notes"] . '"';
   echo "}";
   $first = false;
 }
