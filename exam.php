@@ -30,6 +30,6 @@ echo "<h1>" . $exam["subject"] . "</h1>";
 echo "<b>" . $exam["range"] . "</b><br/>";
 echo date("j.n.Y", strtotime($exam["exam_date"])) . "<br/>";
 echo $exam["notes"];
-echo "<br><span style=\"text-align: center; width: 100%; display: block;\">© 2016</span>";
+echo "<br><br><br><span style=\"text-align: center; width: 100%; display: block;\">© 2016</span>";
 echo "</div>";
 ?>
