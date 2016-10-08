@@ -98,4 +98,8 @@ p {
     background-image: url('img/english.svg');
   }
 
+  #subject-icon-art {
+    background-image: url('img/art.svg');
+  }
+
 }
