@@ -8,6 +8,10 @@ p {
   width: 98%;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 .link {
   font-family: Roboto, Arial;
   display: block;
@@ -97,12 +101,28 @@ p {
 }
 
 @media (min-width: 1600px) {
+  #examsContainer > h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 89px; /* Sice je to o pixel míň, než by mělo být, ale pořád to na mě působí, jako že je to moc... */
+  }
+
+  #examsContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #examsContainer::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   #examsContainer {
+    overflow-y: auto;
     width: 300px;
-    margin-left: auto;
-    margin-right: 20px;
-    background-color: #80D0FF;
-    position: relative;
-    top: 10px;
+    height: 100%;
+    background-color: #75C6FF;
+    position: fixed;
+    top: 0px;
+    right: 0px;
   }
 }
