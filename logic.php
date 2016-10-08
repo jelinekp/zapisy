@@ -1,4 +1,6 @@
 <?php
+require "config.php";
+
 function make_subjects() {
   $subs = json_decode(file_get_contents("workbooks.json"), true);
   foreach($subs as $sub) {
@@ -24,6 +26,20 @@ function make_subjects() {
 }
 
 function make_exams() {
+  $db = new PDO(
+    "mysql:host=" . Config::$db_host . ";dbname=" . Config::$db_name,
+    Config::$db_user, Config::$db_pass
+  );
+  $query = $db->prepare("SELECT * FROM exams;");
+  $query->execute();
+  $exams = $query->fetchAll();
 
+  foreach($exams as $exam) {
+    echo "<tr><td class=\"exam_item\">";
+    echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
+    echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
+    echo "<span class=\"exam_date\">" . date("j.n.Y", strtotime($exam["exam_date"])) . "</span>";
+    echo "</td></tr>\n";
+  }
 }
 ?>
