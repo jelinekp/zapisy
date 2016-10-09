@@ -130,3 +130,52 @@ td {
   text-decoration: none;
   background-color: rgba(127, 127, 127, 0.1);
 }
+
+.file-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.file-icon-link {
+  background-image: url('img/link.svg');
+}
+
+.file-link {
+  color: black;
+}
+
+.file-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.file-link-container {
+  height: 32px;
+  padding: 16px;
+}
+
+.file-link-container:hover {
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.file-name {
+  position: absolute;
+  left: 64px;
+  display: block;
+  height: 16px;
+  font-size: 16px;
+}
+
+.file-author {
+  position: absolute;
+  left: 64px;
+  top: 34px;
+  display: block;
+  height: 12px;
+  font-size: 12px;
+}

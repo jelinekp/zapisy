@@ -9,7 +9,8 @@ $query = $db->prepare("SELECT * FROM exams WHERE _ID = ?");
 $query->execute(array($_GET["id"]));
 $exam = $query->fetchAll()[0];
 
-$query = $db->prepare("SELECT * FROM exam_files WHERE exam_ID = ?");
+$query = $db->prepare("SELECT exam_files.name, exam_files.type, exam_files.data, authors.name AS author_name" .
+  " FROM exam_files LEFT JOIN authors ON exam_files.author_ID = authors.author_ID WHERE exam_files.exam_ID = ?");
 $query->execute(array($_GET["id"]));
 $files = $query->fetchAll();
 
@@ -30,6 +31,20 @@ echo "<h1>" . $exam["subject"] . "</h1>";
 echo "<b>" . $exam["range"] . "</b><br/>";
 echo date("j.n.Y", strtotime($exam["exam_date"])) . "<br/>";
 echo $exam["notes"];
+echo "<table>";
+foreach($files as $file) {
+  echo "<tr><td>";
+  echo "<a href=\"" . $file["data"] . "\" class=\"file-link\">";
+  echo "<div class=\"file-link-container\">";
+  echo "<div class=\"file-icon file-icon-" . $file["type"] . "\"></div>";
+  echo "<span class=\"file-name\">" . $file["name"] . "</span>";
+  echo "<span class=\"file-author\">" . $file["author_name"] . "</span>";
+  echo "</div></a>";
+  echo "</td></tr>";
+}
+echo "</table>";
 echo "<br><br><br><span style=\"text-align: center; width: 100%; display: block;\">© 2016</span>";
 echo "</div>";
+echo "</body>";
+echo "</html>";
 ?>
