@@ -29,65 +29,6 @@ h1 {
   padding-left: 32px;
 }
 
-#subject-icon-chemistry {
-  background-image: url('img/chemistry.svg');
-}
-
-#subject-icon-civics {
-  background-image: url('img/civics.svg');
-}
-
-#subject-icon-biology {
-  background-image: url('img/biology.svg');
-}
-
-#subject-icon-german {
-  background-image: url('img/german.svg');
-}
-
-#subject-icon-history {
-  background-image: url('img/history.svg');
-}
-
-#subject-icon-physics {
-  background-image: url('img/physics.svg');
-}
-
-#subject-icon-music {
-  background-image: url('img/music.svg');
-}
-#subject-icon-book {
-  background-image: url('img/book.svg');
-}
-
-#subject-icon-it {
-  background-image: url('img/it.svg');
-}
-
-#subject-icon-style {
-  background-image: url('img/style.svg');
-}
-
-#subject-icon-grammar {
-  background-image: url('img/grammar.svg');
-}
-
-#subject-icon-geography {
-  background-image: url('img/geography.svg');
-}
-
-#subject-icon-english {
-  background-image: url('img/english.svg');
-}
-
-.link-hover-hack:hover > #subject-icon-chemistry {
-  background-image: url('img/chemistry-animated.svg');
-}
-
-.link-hover-hack:hover > #subject-icon-physics {
-  background-image: url('img/physics-animated.svg');
-}
-
 #konec {
   position: relative;
   height: 300px;
