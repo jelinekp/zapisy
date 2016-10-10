@@ -1,0 +1,66 @@
+[
+  {
+    "code": "M",
+    "name": "Matematika"
+  },
+  {
+    "code": "ČJ",
+    "name": "Český jazyk a literatura"
+  },
+  {
+    "code": "F",
+    "name": "Fyzika"
+  },
+  {
+    "code": "Ch",
+    "name": "Chemie"
+  },
+  {
+    "code": "ZSV",
+    "name": "Základy společenských věd"
+  },
+  {
+    "code": "B",
+    "name": "Biologie"
+  },
+  {
+    "code": "D",
+    "name": "Dějepis"
+  },
+  {
+    "code": "HV",
+    "name": "Hudební výchova"
+  },
+  {
+    "code": "VV",
+    "name": "Výtvarná výchova"
+  },
+  {
+    "code": "AJ-1",
+    "name": "Anglický jazyk (ang1)"
+  },
+  {
+    "code": "AJ-2",
+    "name": "Anglický jazyk (ang2)"
+  },
+  {
+    "code": "NJ-1",
+    "name": "Německý jazyk (něm1)"
+  },
+  {
+    "code": "NJ-2",
+    "name": "Německý jazyk (něm2)"
+  },
+  {
+    "code": "FJ",
+    "name": "Francouzský jazyk"
+  },
+  {
+    "code": "IT",
+    "name": "Informatika"
+  },
+  {
+    "code": "Z",
+    "name": "Zeměpis"
+  }
+]
