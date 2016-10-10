@@ -45,6 +45,9 @@ if(!isset($_POST["sent"])) {
   <html>
   <?php
 } else {
+  $db->exec("CREATE TABLE IF NOT EXISTS exams (_ID INT AUTO_INCREMENT PRIMARY KEY, `subject` VARCHAR(64), `range` VARCHAR(128), `exam_date` TIMESTAMP, `notes` VARCHAR(4096), `author` INT)");
+  $db->exec("CREATE TABLE IF NOT EXISTS authors (author_ID INT AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(64), `pass` VARCHAR(128), `subjects` VARCHAR(128))");
+  $db->exec("CREATE TABLE IF NOT EXISTS exam_files (_ID INT AUTO_INCREMENT PRIMARY KEY, `exam_ID` INT, `name` VARCHAR(128), `type` VARCHAR(8), `data` VARCHAR(256), `author_ID` INT)");
   $query = $db->prepare("INSERT INTO exam_files (`exam_ID`, `name`, `type`, `data`, `author_ID`) VALUES (?, ?, ?, ?, ?)");
   $query->execute(array($_POST["exam"], $_POST["name"], $_POST["type"], $_POST["data"], $_POST["author"]));
   echo $query->errorInfo()[2];
