@@ -94,3 +94,24 @@ td {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+#page{
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#page p{
+  padding: 0px 8px 9px 8px;
+}
+
+ul{
+  font-family: Roboto, Arial, Verdana;
+  font-size: ;
+}
+
+.bolder{
+  font-weight: bold;
+}
