@@ -118,3 +118,12 @@ li{
 .bolder{
   font-weight: bold;
 }
+
+.back{
+  font-family: Roboto, Arial, Verdana;
+  font-size: 15px;
+}
+
+#center{
+  text-align: center;
+}
