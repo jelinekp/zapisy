@@ -43,5 +43,26 @@ function make_exams() {
     echo "</div></a>";
     echo "</td></tr>\n";
   }
+
+  function getUser() {
+    if(!isset($_SESSION["user"] || $_SESSION["user"] == "LOGOUT")) {
+      // We are running with extremely low traffic - waiting a bit longer is OK here
+      $db = new PDO(
+        "mysql:host=" . Config::$db_host . ";dbname=" . Config::$db_name,
+        Config::$db_user, Config::$db_pass
+      );
+      $query = $db->prepare("SELECT user_ID FROM users WHERE name = ?;");
+      $query->execute(array($_SESSION["user"]));
+      $users = $query->fetchAll();
+      if(count($users) == 1) return true;
+    }
+    return false;
+  }
+
+  function login() {
+    $_SESSION["return"] = $_SERVER["REQUEST_URI"];
+    @header("Location: login.php");
+    echo "<script>window.location = \"login.php\";</script>";
+  }
 }
 ?>
