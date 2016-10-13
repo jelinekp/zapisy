@@ -109,7 +109,10 @@ td {
 
 ul{
   font-family: Roboto, Arial, Verdana;
-  font-size: ;
+}
+
+li{
+  font-family: Roboto, Arial, Verdana;
 }
 
 .bolder{
