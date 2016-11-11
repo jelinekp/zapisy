@@ -58,6 +58,10 @@ td {
   background-color: rgba(127, 127, 127, 0.1);
 }
 
+.link:active{
+  background-color: lightgray;
+}
+
 .link-archive {
   z-index: 4;
   height: 56px;
@@ -73,6 +77,10 @@ td {
 
 .link-archive:hover {
   background-color: rgba(127, 127, 127, 0.1);
+}
+
+.link-archive:active{
+  background-color: lightgray;
 }
 
 .link-archive-text {
