@@ -36,10 +36,11 @@ function make_exams() {
 
   foreach($exams as $exam) {
     echo "<tr><td>";
+    echo "<span class=\"link-exam\"><div class=\"exam_item\">";
     echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
     echo "<span class=\"exam_date\">" . date("j.n.Y", strtotime($exam["exam_date"])) . "</span>";
-    echo "</div>";
+    echo "</div></span>";
     echo "</td></tr>\n";
   }
 }
