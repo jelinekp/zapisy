@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="img/ikona.ico" />
-    <link rel=“apple-touch-icon“ href=“img/zapisy-512px.png“/>
+    <link rel=“apple-touch-icon“ href="img/zapisy-512px.png"/>
     <link rel="icon" type="image/png" href="img/zapisy-512px.png"/>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <meta name="author" content="github.com/jelinekp/zapisy"
+    <meta name="author" content="github.com/jelinekp/zapisy" />
+    <meta name="description" content="Zápisy 3.E z GFPVM" />
     <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="common.css"/>
     <link rel="stylesheet" media="(min-width: 731px)" type="text/css" href="style.css"/>
