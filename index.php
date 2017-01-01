@@ -24,7 +24,7 @@
     </script>
   </head>
   <body>
-    <div id="container">
+    <div id="containerHack"><div id="container">
       <h1>Zápisy 3.E</h1>
       <p>Archiv obsahuje starší zápisy</p>
       <table>
@@ -38,14 +38,14 @@
         Dokumenty Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Google Play</a>,
         <a href="https://itunes.apple.com/cz/app/google-docs/id842842640?mt=8">App Store</a>)<br>
         <a href="https://github.com/jelinekp/zapisy">Projekt na GitHubu (jelinekp/zapisy)</a>
-        <div id="examsContainer">
-          <h2>Písemky</h2>
-          <table>
-            <?php make_exams(); ?>
-          </table>
-        </div>
         <span style="text-align: center; width: 100%; display: block;">© 2016</span>
       </p>
+    </div></div>
+    <div id="examsContainer">
+      <h2>Písemky</h2>
+      <table>
+        <?php make_exams(); ?>
+      </table>
     </div>
   </body>
 </html>

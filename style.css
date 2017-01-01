@@ -47,29 +47,37 @@ h1 {
   margin-bottom: 4px;
 }
 
-@media (min-width: 1600px) {
-  #examsContainer > h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 89px; /* Sice je to o pixel míň, než by mělo být, ale pořád to na mě působí, jako že je to moc... */
-  }
+#examsContainer > h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 89px; /* Sice je to o pixel míň, než by mělo být, ale pořád to na mě působí, jako že je to moc... */
+}
 
-  #examsContainer::-webkit-scrollbar {
-    width: 5px;
-  }
+#examsContainer::-webkit-scrollbar {
+  width: 5px;
+}
 
-  #examsContainer::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.5);
-  }
+#examsContainer::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
 
-  #examsContainer {
-    overflow-y: auto;
-    width: 300px;
-    height: 100%;
-    background-color: #75C6FF;
-    position: fixed;
-    top: 0px;
-    right: 0px;
+#examsContainer {
+  overflow-y: auto;
+  width: 300px;
+  height: 100%;
+  background-color: #75C6FF;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+@media(max-width: 1600px) {
+  #containerHack {
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 350px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
