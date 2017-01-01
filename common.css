@@ -12,6 +12,14 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 32px;
+}
+
 a:hover{
 	text-decoration: underline;
   color: #424242;
@@ -30,7 +38,7 @@ td {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.smoother{
+.smoother {
   color: grey;
 }
 
@@ -58,7 +66,7 @@ td {
   background-color: rgba(127, 127, 127, 0.1);
 }
 
-.link:active{
+.link:active {
   background-color: lightgray;
 }
 
@@ -103,35 +111,79 @@ td {
   background-repeat: no-repeat;
 }
 
-#page{
-  position: relative;
-  width: 100%;
-  border-radius: 3px;
-  background-color: white;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-#page p{
-  padding: 0px 8px 1px 8px;
-}
-
-ul{
-  font-family: Roboto, Arial, Verdana;
-}
-
-li{
-  font-family: Roboto, Arial, Verdana;
-}
-
-.bolder{
+.exam_subject {
+  color: black;
+  display: block;
+  font-size: 16px;
   font-weight: bold;
 }
 
-.back{
-  font-family: Roboto, Arial, Verdana;
-  font-size: 15px;
+.exam_range {
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 
-#center{
-  text-align: center;
+.exam_item {
+  color: black;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.exam_item:hover {
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.link-exam:hover {
+  text-decoration: none;
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.file-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.file-icon-link {
+  background-image: url('img/link.svg');
+}
+
+.file-link {
+  color: black;
+}
+
+.file-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.file-link-container {
+  height: 32px;
+  padding: 16px;
+}
+
+.file-link-container:hover {
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.file-name {
+  position: absolute;
+  left: 64px;
+  display: block;
+  height: 16px;
+  font-size: 16px;
+}
+
+.file-author {
+  position: absolute;
+  left: 64px;
+  top: 34px;
+  display: block;
+  height: 12px;
+  font-size: 12px;
 }

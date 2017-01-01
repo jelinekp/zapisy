@@ -2,17 +2,14 @@ table {
   position: relative;
 }
 
-h1 {
-  position: relative;
-  font-family: Roboto, Arial;
-  font-size: 35px;
-  left: 10px;
-}
-
 p {
   font-size: 17px;
   left: 10px;
   width: 98%;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 .link {
@@ -32,69 +29,6 @@ p {
   padding-left: 32px;
 }
 
-#subject-icon-chemistry {
-  background-image: url('img/chemistry.svg');
-}
-
-#subject-icon-civics {
-  background-image: url('img/civics.svg');
-}
-
-#subject-icon-biology {
-  background-image: url('img/biology.svg');
-}
-
-#subject-icon-german {
-  background-image: url('img/german.svg');
-}
-
-#subject-icon-history {
-  background-image: url('img/history.svg');
-}
-
-#subject-icon-physics {
-  background-image: url('img/physics.svg');
-}
-
-#subject-icon-music {
-  background-image: url('img/music.svg');
-}
-#subject-icon-book {
-  background-image: url('img/book.svg');
-}
-
-#subject-icon-it {
-  background-image: url('img/it.svg');
-}
-
-#subject-icon-style {
-  background-image: url('img/style.svg');
-}
-
-#subject-icon-grammar {
-  background-image: url('img/grammar.svg');
-}
-
-#subject-icon-geography {
-  background-image: url('img/geography.svg');
-}
-
-#subject-icon-english {
-  background-image: url('img/english.svg');
-}
-
-#subject-icon-art {
-  background-image: url('img/art.svg');
-}
-
-.link-hover-hack:hover > #subject-icon-chemistry {
-  background-image: url('img/chemistry-animated.svg');
-}
-
-.link-hover-hack:hover > #subject-icon-physics {
-  background-image: url('img/physics-animated.svg');
-}
-
 #konec {
   position: relative;
   height: 300px;
@@ -105,4 +39,37 @@ p {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#examsContainer > h2 {
+  text-align: center;
+  font-size: 24;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 1600px) {
+  #examsContainer > h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 89px; /* Sice je to o pixel míň, než by mělo být, ale pořád to na mě působí, jako že je to moc... */
+  }
+
+  #examsContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #examsContainer::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #examsContainer {
+    overflow-y: auto;
+    width: 300px;
+    height: 100%;
+    background-color: #75C6FF;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
 }
