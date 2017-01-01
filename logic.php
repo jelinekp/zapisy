@@ -94,4 +94,20 @@ function make_form(string $name) : boolean {
   
   return true;
 }
+
+class V {
+  private static $vfile_cache = null;
+
+  static function file(string $name) {
+    if(static::$vfile_cache == null) {
+      static::$vfile_cache = array();
+      $json = json_decode(file_get_contents("version.json"), true);
+      foreach($json as $file) {
+        static::$vfile_cache[$file["file"]] = $file["version"];
+      }
+    }
+
+    return "$name?v=" . static::$vfile_cache[$name];
+  }
+}
 ?>

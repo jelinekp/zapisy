@@ -10,9 +10,9 @@
     <meta name="author" content="github.com/jelinekp/zapisy" />
     <meta name="description" content="Zápisy 3.E z GFPVM" />
     <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="common.css"/>
-    <link rel="stylesheet" media="(min-width: 731px)" type="text/css" href="style.css"/>
-    <link rel="stylesheet" media="(max-width: 730px)" type="text/css" href="mobile.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= V::file("common.css") ?>"/>
+    <link rel="stylesheet" media="(min-width: 731px)" type="text/css" href="<?= V::file("style.css") ?>"/>
+    <link rel="stylesheet" media="(max-width: 730px)" type="text/css" href="<?= V::file("mobile.css") ?>"/>
     <title>Zápisy</title>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
