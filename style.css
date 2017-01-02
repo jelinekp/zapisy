@@ -43,14 +43,9 @@ h1 {
 
 #examsContainer > h2 {
   text-align: center;
-  font-size: 24;
-  margin-bottom: 4px;
-}
-
-#examsContainer > h2 {
-  text-align: center;
   font-size: 24px;
-  margin-bottom: 89px; /* Sice je to o pixel míň, než by mělo být, ale pořád to na mě působí, jako že je to moc... */
+  margin-top: 44px;
+  margin-bottom: 65px; /* Sice je to o pixel míň, než by mělo být, ale pořád to na mě působí, jako že je to moc... */
 }
 
 #examsContainer::-webkit-scrollbar {
@@ -79,5 +74,9 @@ h1 {
     width: calc(100% - 350px);
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #examsContainer > h2 {
+    margin-bottom: 73px;
   }
 }
