@@ -9,7 +9,7 @@ $query->execute();
 $exams = $query->fetchAll();
 
 $first = true;
-echo "[";
+echo '{"version":1,"exams":[';
 foreach($exams as $exam) {
   if(!$first) echo ",";
   echo "{";
@@ -20,5 +20,5 @@ foreach($exams as $exam) {
   echo "}";
   $first = false;
 }
-echo "]";
+echo "]}";
 ?>
