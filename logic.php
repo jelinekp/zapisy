@@ -49,7 +49,7 @@ function make_exams() {
 
 function get_diff($time) {
   $diff = $time - time();
-  $days = floor($diff/(60*60*24));
+  $days = ceil($diff/(60*60*24));
   if($days == 1) {
     return "zítra";
   } else if ($days == 2) {
