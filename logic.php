@@ -35,13 +35,39 @@ function make_exams() {
   $exams = $query->fetchAll();
 
   foreach($exams as $exam) {
+    $eTime = strtotime($exam["exam_date"]);
     echo "<tr><td>";
     echo "<span class=\"link-exam\"><div class=\"exam_item\">";
     echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
-    echo "<span class=\"exam_date\">" . date("j.n.Y", strtotime($exam["exam_date"])) . "</span>";
+    echo "<span class=\"exam_date\">" . date("j.n.Y", $eTime) . " (" .
+      get_diff($eTime) . ")</span>";
     echo "</div></span>";
     echo "</td></tr>\n";
+  }
+}
+
+function get_diff($time) {
+  $diff = $time - time();
+  $days = floor($diff/(60*60*24));
+  if($days == 1) {
+    return "zítra";
+  } else if ($days == 2) {
+    return "pozítří";
+  } else if ($days > 4) {
+    return "za $days dnů";
+  } else if ($days > 2) {
+    return "za $days dny";
+  } else if ($days == 0) {
+    return "dneska";
+  } else if ($days == -1) {
+    return "včera";
+  } else if ($days == -2) {
+    return "předevčírem";
+  } else if ($days < -4) {
+    return abs($days) . " dnů zpátky";
+  } else {
+    return abs($days) . " dny zpátky";
   }
 }
 
