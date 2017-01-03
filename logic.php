@@ -41,15 +41,17 @@ function make_exams() {
     echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
     echo "<span class=\"exam_date\">" . date("j.n.Y", $eTime) . " (" .
-      get_diff($eTime) . ")</span>";
+      get_diff($exam["exam_date"]) . ")</span>";
     echo "</div></span>";
     echo "</td></tr>\n";
   }
 }
 
 function get_diff($time) {
-  $date = DateTime::createFromFormat("U", $time);
-  $days = ($date->diff(new DateTime())->format("%r%a") * (-1)) + 1;
+  $date = new DateTime($time);
+  if($date->format("j.n.Y") == date("j.n.Y")) return "dneska";
+  $days = ($date->diff(new DateTime())->format("%r%a") * (-1));
+  if($days >= 0) $days++;
   if($days == 1) {
     return "zítra";
   } else if ($days == 2) {
