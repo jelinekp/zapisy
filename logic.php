@@ -49,7 +49,7 @@ function make_exams() {
 
 function get_diff($time) {
   $date = DateTime::createFromFormat("U", $time);
-  $days = ($date->diff(new DateTime())->format("%r%a")) * (-1);
+  $days = ($date->diff(new DateTime())->format("%r%a") * (-1)) + 1;
   if($days == 1) {
     return "zítra";
   } else if ($days == 2) {
