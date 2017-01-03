@@ -1,14 +1,14 @@
 [
   {
     "file": "common.css",
-    "version": 2
+    "version": 1
   },
   {
     "file": "style.css",
-    "version": 5
+    "version": 4
   },
   {
     "file": "mobile.css",
-    "version": 2
+    "version": 1
   }
 ]
