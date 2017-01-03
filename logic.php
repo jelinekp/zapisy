@@ -48,8 +48,8 @@ function make_exams() {
 }
 
 function get_diff($time) {
-  $diff = $time - time();
-  $days = ceil($diff/(60*60*24));
+  $date = DateTime::createFromFormat("U", $time);
+  $days = ($date->diff(new DateTime())->format("%r%a")) * (-1);
   if($days == 1) {
     return "zítra";
   } else if ($days == 2) {
