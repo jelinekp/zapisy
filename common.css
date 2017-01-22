@@ -187,3 +187,37 @@ td {
   height: 12px;
   font-size: 12px;
 }
+
+/*tutorial*/
+#page{
+   position: relative;
+   width: 100%;
+   border-radius: 3px;
+   background-color: white;
+   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#page p{
+   padding: 0px 8px 1px 8px;
+}
+
+ul{
+   font-family: Roboto, Arial, Verdana;
+}
+
+li{
+   font-family: Roboto, Arial, Verdana;
+}
+
+.bolder{
+   font-weight: bold;
+}
+
+.back{
+   font-family: Roboto, Arial, Verdana;
+   font-size: 15px;
+}
+
+#center{
+   text-align: center;
+}
