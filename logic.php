@@ -36,12 +36,20 @@ function make_exams() {
 
   foreach($exams as $exam) {
     $eTime = strtotime($exam["exam_date"]);
+    $dateStr = date("j.n.Y", $eTime) . " ("
+      . get_diff($exam["exam_date"]) . ")";
+    if(isset($exam["exam_date_uc"]) && $exam["exam_date_uc"] == 1) {
+      switch(mt_rand(0, 2)) {
+        case 0: $dateStr = "Asi " . $dateStr; break;
+        case 1: $dateStr = "Možná " . $dateStr; break;
+        case 2: $dateStr = "Zřejmě " . $dateStr; break;
+      }
+    }
     echo "<tr><td>";
     echo "<span class=\"link-exam\"><div class=\"exam_item\">";
     echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
-    echo "<span class=\"exam_date\">" . date("j.n.Y", $eTime) . " (" .
-      get_diff($exam["exam_date"]) . ")</span>";
+    echo "<span class=\"exam_date\">" . $dateStr . "</span>";
     echo "</div></span>";
     echo "</td></tr>\n";
   }
