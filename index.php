@@ -26,9 +26,7 @@
   <body>
     <div id="containerHack"><div id="container">
       <h1>Zápisy 3.E</h1>
-      <p>Archiv obsahuje starší zápisy
-        <br />
-        <a href="tutorial">Užitečné tipy a triky zde.</a>
+      <p>Archiv obsahuje starší zápisy, <a href="tutorial">užitečné tipy a triky najdete zde.</a>
       </p>
       <table>
         <?php make_subjects(); ?>
