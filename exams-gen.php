@@ -4,7 +4,7 @@ $db = new PDO(
   "mysql:host=" . Config::$db_host . ";dbname=" . Config::$db_name,
   Config::$db_user, Config::$db_pass
 );
-$query = $db->prepare("SELECT * FROM exams;");
+$query = $db->prepare("SELECT * FROM exams ORDER BY exam_date ASC;");
 $query->execute();
 $exams = $query->fetchAll();
 
