@@ -55,18 +55,25 @@
     "archive": "https://docs.google.com/document/d/1nlu-f8s6GJ3ulLsgESeMFBDy2HCZJfXjn_6Qku_Vl_M/edit?usp=sharing"
   },
   {
-    "name": "Němčina (ang2)",
-    "icon": "img/german.svg",
-    "fullname": "Německý jazyk (ang2)",
-    "url": "https://docs.google.com/document/d/111MqVG-OGiFX2BlONcWz-U-2yAo4T_F1OXT6ATa8v-U/edit?usp=sharing",
-    "archive": "https://docs.google.com/document/d/1Ajk1-kWHjb516-enRL8SN8q9L9_PByn2QDqEJLIMZAs/edit?usp=sharing"
-  },
-  {
     "name": "Angličtina (ang2)",
     "icon": "img/english.svg",
     "fullname": "Anglický jazyk (ang2)",
     "url": "https://docs.google.com/document/d/1XuNTgI0PJzJjOjJzDq6APlSPEfydXxBnLipjqGecY8Y/edit?usp=sharing",
     "archive": "https://docs.google.com/document/d/1rlUfgCx4XP7UERnS4w8sASs7ogq7xycnwEFxYR1UEGw/edit?usp=sharing"
+  },
+  {
+    "name": "Němčina (něm1)",
+    "icon": "img/german.svg",
+    "fullname": "Německý jazyk (něm1)",
+    "url": "https://docs.google.com/document/d/1-8aBG1-HjBW-8F3t6C0cWV2Fo5AMQ6-BDWTn53H7JFk/edit",
+    "archive": "https://docs.google.com/document/d/1Zj5YNgefXGvefQo0mgSZyTgzeE_uLCcmd0tEGlE84p0/edit?usp=sharing"
+  },
+  {
+    "name": "Němčina (ang2)",
+    "icon": "img/german.svg",
+    "fullname": "Německý jazyk (ang2)",
+    "url": "https://docs.google.com/document/d/111MqVG-OGiFX2BlONcWz-U-2yAo4T_F1OXT6ATa8v-U/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1Ajk1-kWHjb516-enRL8SN8q9L9_PByn2QDqEJLIMZAs/edit?usp=sharing"
   },
   {
     "name": "Hudebka",
