@@ -2,4 +2,4 @@
 Toto je společný miniprojekt uživatelů Markaos a jelinekp.
 Je to web, který slouží k přesměrování odkazů na gdocs
 
-[Oficiální stránka](http://zapisy.kvalitne.cz)
+[Oficiální stránka](http://zapisy.markaos.cz)
