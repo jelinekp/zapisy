@@ -47,6 +47,7 @@ function make_exams() {
     }
     echo "<tr><td>";
     echo "<span class=\"link-exam\"><div class=\"exam_item\">";
+    echo "<a href=\"#delete-exam\" class=\"link-delete trigger\" data-id=\"" . $exam["_ID"] . "\"></a>";
     echo "<span class=\"exam_subject\">" . $exam["subject"] . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
     echo "<span class=\"exam_date\">" . $dateStr . "</span>";
