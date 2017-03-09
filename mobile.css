@@ -40,6 +40,14 @@ p {
   display: none;
 }
 
+.exam_item:hover .link-delete {
+  display: none;
+}
+
+.exams-button-container {
+  display: none;
+}
+
 @media (min-width: 320px) {
   .link-text {
     padding-left: 64px;
