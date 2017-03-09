@@ -56,8 +56,12 @@
     "name": "Francouzský jazyk"
   },
   {
-    "code": "IT",
-    "name": "Informatika"
+    "code": "IT-1",
+    "name": "Informatika (ang1)"
+  },
+  {
+    "code": "IT-2",
+    "name": "Informatika (ang2)"
   },
   {
     "code": "Z",
