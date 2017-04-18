@@ -26,7 +26,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="jquery/jquery.leanModal.min.js"></script>
     <script src="jquery/jquery-ui.min.js"></script>
-    <script src="script.js"></script>
+    <script src="<?= V::file("script.js") ?>"></script>
   </head>
   <body onLoad="load()">
     <div id="lean_overlay"></div>

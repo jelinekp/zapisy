@@ -10,5 +10,9 @@
   {
     "file": "mobile.css",
     "version": 5
+  },
+  {
+    "file": "script.js",
+    "version": 2
   }
 ]
