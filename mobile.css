@@ -57,3 +57,16 @@ p {
     display: block;
   }
 }
+
+#stupidCountdownContainer {
+  height: 32px;
+}
+
+span.stupidElement {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}

@@ -68,11 +68,10 @@
     </div>
     <div id="containerHack"><div id="container">
       <h1>Zápisy 3.E</h1>
-      <p>Archiv obsahuje starší zápisy, <a href="tutorial">užitečné tipy a triky najdete zde.</a>
+      <p>Archiv obsahuje starší zápisy, <a href="tutorial">užitečné tipy a triky najdete zde.</a></p>
       <div id="stupidCountdownContainer">
         <span class="stupidElement" id="stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek"></span>
       </div>
-      </p>
       <table>
         <?php make_subjects(); ?>
       </table>
