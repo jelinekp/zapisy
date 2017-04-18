@@ -1,4 +1,19 @@
+var countDownDate = new Date("Jul 1, 2017 9:20:25").getTime();
+var x;
+var cfunc = function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Do prázdnin zbývá " + days + " dní ;)";
+  if (distance < 1000*60*60*24) {
+    clearInterval(x);
+    document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Prázdniny jsou tu ;)";
+  }
+}
+x = setInterval(cfunc, 60 * 1000);
+
 function load() {
+  cfunc();
   $(".trigger").leanModal({closeButton: ".modal-close"});
   $(".input-date").datepicker({
     firstDay: 1,
