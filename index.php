@@ -76,8 +76,8 @@
         <?php make_subjects(); ?>
       </table>
       <p>Pokud byste našli chybu v učivu, tak ji ihned opravte - případně můžete komentovat učivo. Jakákoli pomoc je velmi důležitá.
-        Můžete přidávat obrázky, náčrty, vzorce, ... <br /> Zápisy z chemie a fyziky již nebudou dostupné.<br />Za chyby v učivu v žádném případě nezodpovídáme. <br />
-        Hlavní contributoři: <a href="https://plus.google.com/117073341275292426772">baxit</a>, <a href="http://jelinekp.wz.cz/">jelinekp</a>
+        Můžete přidávat obrázky, náčrty, vzorce, ... <br /> Zápisy z fyziky již nebudou dostupné.<br />Za chyby v učivu v žádném případě nezodpovídáme. <br />
+        Hlavní přispěvatelé: <a href="https://plus.google.com/117073341275292426772">baxit</a>, <a href="http://jelinekp.wz.cz/">jelinekp</a>
         a <a href="https://markaos.cz/">Markaos</a><br />
         Mobilní aplikace (i pro offline zápisy):
         Dokumenty Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Google Play</a>,
