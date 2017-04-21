@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 1, 2017 9:20:25").getTime();
+var countDownDate = new Date("Jul 1, 2017 8:20:25").getTime();
 var x;
 var cfunc = function() {
   var now = new Date().getTime();
