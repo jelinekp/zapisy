@@ -29,39 +29,37 @@
   },
   {
     "code": "HV",
-    "name": "Hudební výchova"
+    "name": "Hudební výchova",
+    "gsid": "art",
+    "cgid": "hud"
   },
   {
     "code": "VV",
-    "name": "Výtvarná výchova"
+    "name": "Výtvarná výchova",
+    "gsid": "art",
+    "cgid": "vyt"
   },
   {
-    "code": "AJ-1",
-    "name": "Anglický jazyk (ang1)"
+    "code": "AJ",
+    "name": "Anglický jazyk",
+    "gsid": "ang"
   },
   {
-    "code": "AJ-2",
-    "name": "Anglický jazyk (ang2)"
-  },
-  {
-    "code": "NJ-1",
-    "name": "Německý jazyk (něm1)"
-  },
-  {
-    "code": "NJ-2",
-    "name": "Německý jazyk (něm2)"
+    "code": "NJ",
+    "name": "Německý jazyk",
+    "gsid": "sec",
+    "cgid": "něm1|něm2"
   },
   {
     "code": "FJ",
-    "name": "Francouzský jazyk"
+    "name": "Francouzský jazyk",
+    "gisd": "sec",
+    "cgid": "fra"
   },
   {
-    "code": "IT-1",
-    "name": "Informatika (ang1)"
-  },
-  {
-    "code": "IT-2",
-    "name": "Informatika (ang2)"
+    "code": "IT",
+    "name": "Informatika",
+    "gsid": "ang"
   },
   {
     "code": "Z",

@@ -1,4 +1,4 @@
-<?php require "logic.php"; ?>
+<?php require "logic.php"; require "provider.php"; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -40,7 +40,7 @@
       <form method="POST" action="add.php">
         <select class="input-select" name="subject" placeholder="Předmět">
           <?php
-            $subjects = json_decode(file_get_contents("subjects.json"), true);
+            $subjects = Provider::getSubjects();
             foreach($subjects as $subject) {
               echo "<option value=\"" . $subject["name"] . "\">" . $subject["name"] . "</option>\n";
             }
