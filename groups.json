@@ -1,0 +1,49 @@
+[
+  {
+    "gsid": "ang",
+    "groups": [
+      {
+        "gid": "ang1",
+        "name": "Angličtina 1"
+      },
+      {
+        "gid": "ang2",
+        "name": "Angličtina 2"
+      }
+    ]
+  },
+  {
+    "gsid": "sec",
+    "groups": [
+      {
+        "gid": "něm1",
+        "name": "Němčina 1"
+      },
+      {
+        "gid": "něm2",
+        "name": "Němčina 2"
+      },
+      {
+        "gid": "fra",
+        "name": "Francouzština"
+      }
+    ]
+  },
+  {
+    "gsid": "art",
+    "groups": [
+      {
+        "gid": "vyt",
+        "name": "Výtvarka"
+      },
+      {
+        "gid": "hud",
+        "name": "Hudebka"
+      },
+      {
+        "gid": "hvS",
+        "name": "Sbor"
+      }
+    ]
+  }
+]
