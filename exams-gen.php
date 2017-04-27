@@ -9,16 +9,18 @@ $query->execute();
 $exams = $query->fetchAll();
 
 $first = true;
-echo '{"version":1,"exams":[';
+echo '{"version":2,"exams":[';
 foreach($exams as $exam) {
   if(!$first) echo ",";
   echo "{";
     echo '"subject":"' . $exam["subject"] . '",';
     echo '"range":"' . $exam["range"] . '",';
     echo '"date":"' . date("j.n.Y", strtotime($exam["exam_date"])) . '",';
-    echo '"notes":"' . $exam["notes"] . '",';
     echo '"id":' . $exam["_ID"] . ',';
-    echo '"author":"' . $exam["author"] . '"';
+    if(strpos($exam["subject"], '(') > 0) {
+      $str = $exam["subject"];
+      echo '"group":"' . substr($str, strpos($str, '(') + 1, strpos($str, ')') - strpos($str, '(') - 1) . '",';
+    }
   echo "}";
   $first = false;
 }
