@@ -23,17 +23,22 @@ foreach($exams as $exam) {
   if(!$first) echo ",";
   echo "{";
     if($version >= 2) {
-      echo '"subject":"' . substr($exam["subject"], 0, strpos($exam["subject"], '(') - 1) . '",';
+      $substr = strpos($exam["subject"], '(') > 0 ? substr($exam["subject"], 0, strpos($exam["subject"], '(') - 1) : $exam["subject"];
+      echo '"subject":"' . $substr . '",';
     } else {
       echo '"subject":"' . $exam["subject"] . '",';
     }
     echo '"range":"' . $exam["range"] . '",';
     echo '"date":"' . date("j.n.Y", strtotime($exam["exam_date"])) . '",';
-    echo '"id":' . $exam["_ID"] . ',';
     if($version >= 2 && strpos($exam["subject"], '(') > 0) {
       $str = $exam["subject"];
       echo '"group":"' . substr($str, strpos($str, '(') + 1, strpos($str, ')') - strpos($str, '(') - 1) . '",';
     }
+    if($version == 1) {
+      echo '"notes":"' . $exam["notes"] . '",';
+      echo '"author":"' . $exam["author"] . '",';
+    }
+    echo '"id":' . $exam["_ID"];
   echo "}";
   $first = false;
 }
