@@ -1,6 +1,7 @@
 [
   {
     "gsid": "ang",
+    "gsname": "Anglický jazyk",
     "groups": [
       {
         "gid": "ang1",
@@ -14,6 +15,7 @@
   },
   {
     "gsid": "sec",
+    "gsname": "Druhý jazyk",
     "groups": [
       {
         "gid": "něm1",
@@ -31,6 +33,7 @@
   },
   {
     "gsid": "art",
+    "gsname": "\"Nepovinný\" předmět",
     "groups": [
       {
         "gid": "vyt",
