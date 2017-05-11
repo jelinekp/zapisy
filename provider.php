@@ -25,13 +25,13 @@ class Provider {
         }
         if(count($subgroups) > 1) {
           foreach($subgroups as $subgrp) {
-            $out[] = ['name' => $name . ' (' . $subgrp['gid'] . ')'];
+            $out[] = ['name' => $name . ' (' . $subgrp['gid'] . ')', 'group' => $subgrp['gid']];
           }
         } else {
-          $out[] = ['name' => $name];
+          $out[] = ['name' => $name, 'group' => $subgroups[0]['gid']];
         }
       } else {
-        $out[] = ['name' => $name];
+        $out[] = ['name' => $name, 'group' => 'none'];
       }
     }
 

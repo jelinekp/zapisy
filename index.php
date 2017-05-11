@@ -42,7 +42,7 @@
           <?php
             $subjects = Provider::getSubjects();
             foreach($subjects as $subject) {
-              echo "<option value=\"" . $subject["name"] . "\">" . $subject["name"] . "</option>\n";
+              echo "<option value=\"" . $subject["name"] . ";" . $subject["group"] ."\">" . $subject["name"] . "</option>\n";
             }
           ?>
         </select><br>

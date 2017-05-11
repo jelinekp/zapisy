@@ -30,9 +30,8 @@ foreach($exams as $exam) {
     }
     echo '"range":"' . $exam["range"] . '",';
     echo '"date":"' . date("j.n.Y", strtotime($exam["exam_date"])) . '",';
-    if($version >= 2 && strpos($exam["subject"], '(') > 0) {
-      $str = $exam["subject"];
-      echo '"group":"' . substr($str, strpos($str, '(') + 1, strpos($str, ')') - strpos($str, '(') - 1) . '",';
+    if($version >= 2 && $exam["grp"] != "none") {
+      echo '"group":"' . $exam["grp"] . '",';
     }
     if($version == 1) {
       echo '"notes":"' . $exam["notes"] . '",';
