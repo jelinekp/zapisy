@@ -10,7 +10,9 @@ class DB {
         Config::$db_user, Config::$db_pass
       );
 
-      static::$instance->exec("CREATE TABLE IF NOT EXISTS api1_nonce (iid TEXT(512) NOT NULL PRIMARY KEY, nonce INT);");
+      static::$instance->exec("CREATE TABLE IF NOT EXISTS api1_nonce (iid VARCHAR(512) CHARACTER SET ascii NOT NULL PRIMARY KEY, nonce INT);");
+
+      echo static::$instance->errorInfo()[2];
     }
   }
 
@@ -35,7 +37,8 @@ class DB {
     static::prepare();
     $query = static::$instance->prepare("SELECT nonce FROM api1_nonce WHERE iid = ? AND nonce = ?");
     $query->execute([$user, $nonce]);
-    if($res < 1) return false;
+    $res = $query->fetchAll();
+    if(count($res) < 1) return false;
     return true;
   }
 
@@ -46,22 +49,30 @@ class DB {
       return false;
     }
 
-    $query = static::$instance->prepare('INSERT INTO exams (`subject`, `range`, `exam_date`, `notes`, `author`) VALUES (?, ?, ?, "", 1)');
-    $query->execute([$subject, $range, $date]);
+    $grp = "none";
+    if(strpos($subject, '(') > 0) {
+      $grp = substr($subject, strpos($subject, '(') + 1, strpos($subject, ')') - strpos($subject, '(') - 1);
+      $subject = substr($subject, 0, strpos($subject, '(') - 1);
+    }
+
+    $date = DateTime::createFromFormat('!d.m.Y', $date)->getTimestamp();
+
+    $query = static::$instance->prepare('INSERT INTO exams (`subject`, `range`, `exam_date`, `notes`, `author`, `grp`) VALUES (?, ?, ?, "", 1, ?)');
+    $query->execute([$subject, $range, date("Y-m-d", $date), $grp]);
 
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
     return true;
   }
 
-  static function removeExam(string $user, string $nonce, string $eid) {
+  static function deleteExam(string $user, string $nonce, string $eid) {
     static::prepare();
     if(!static::verifyActionID($user, $nonce)) {
       echo '{"status":"error","message":"Wrong nonce","code":1}';
       return false;
     }
 
-    $query = static::$instance->prepare('INSERT INTO exams (`subject`, `range`, `exam_date`, `notes`, `author`) VALUES (?, ?, ?, "", 1)');
-    $query->execute([$subject, $range, $date]);
+    $query = static::$instance->prepare('DELETE FROM exams WHERE `_ID`=?');
+    $query->execute([$eid]);
 
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
     return true;

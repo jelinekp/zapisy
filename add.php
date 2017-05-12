@@ -18,7 +18,7 @@ $db = new PDO(
 }*/
 
 if(isset($_POST["sent"])) {
-  $date = DateTime::createFromFormat('!d.m.Y', $_POST["date"])->getTimestamp();;
+  $date = DateTime::createFromFormat('!d.m.Y', $_POST["date"])->getTimestamp();
   $db->exec("CREATE TABLE IF NOT EXISTS exams (_ID INT AUTO_INCREMENT PRIMARY KEY, `subject` VARCHAR(64), `range` VARCHAR(128), `exam_date` TIMESTAMP, `notes` VARCHAR(4096), `author` INT, `exam_date_uc` INT, `grp` VARCHAR(32))");
   $db->exec("CREATE TABLE IF NOT EXISTS authors (author_ID INT AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(64), `pass` VARCHAR(128), `subjects` VARCHAR(128))");
   $db->exec("CREATE TABLE IF NOT EXISTS exam_files (_ID INT AUTO_INCREMENT PRIMARY KEY, `exam_ID` INT, `name` VARCHAR(128), `type` VARCHAR(8), `data` VARCHAR(256), `author_ID` INT)");

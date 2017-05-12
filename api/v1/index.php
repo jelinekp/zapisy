@@ -12,7 +12,7 @@ if(!isset($_POST['iid'])) {
 
 switch($_POST['action']) {
   case 'getRequestId':
-    echo '{"res":"OK","nonce":"' . DB::getActionID($_POST['iid']) . '"}';
+    echo '{"status":"OK","nonce":"' . DB::getActionID($_POST['iid']) . '"}';
     break;
   case 'addExam':
     DB::addExam($_POST['iid'], $_POST['nonce'], $_POST['subject'], $_POST['range'], $_POST['date']);
@@ -23,5 +23,8 @@ switch($_POST['action']) {
   case 'updateExam':
     DB::updateExam($_POST['iid'], $_POST['nonce'], $_POST['eid'], $_POST['range'], $_POST['date']);
     break;
+  default:
+    echo "ERROR: Unknown action";
+    exit(0);
 }
 ?>
