@@ -34,7 +34,6 @@ function make_exams() {
   $query->execute();
   $exams = $query->fetchAll();
 
-  $query = $db->prepare("SELECT * FROM exam_files WHERE exam_ID=?");
   foreach($exams as $exam) {
     $eTime = strtotime($exam["exam_date"]);
     $dateStr = date("j.n.Y", $eTime) . " ("
@@ -46,24 +45,14 @@ function make_exams() {
         case 2: $dateStr = "Zřejmě " . $dateStr; break;
       }
     }
-    $fileStr = "";
-    $fileLink = "";
-    $fileEnd = "";
-    $query->execute([$exam["_ID"]]);
-    $files = $query->fetchAll();
-    if(count($files) > 0) {
-      $fileStr = "<span class=\"attachment\"></span>";
-      $fileLink = "<a href=\"" . $files[0]['data'] . "\" class=\"attachment-link\">";
-      $fileEnd = "</a>";
-    }
-    echo "<tr><td>" . $fileLink;
+    echo "<tr><td>";
     echo "<span class=\"link-exam\"><div class=\"exam_item\">";
-    //echo "<a href=\"#delete-exam\" class=\"link-delete trigger\" data-id=\"" . $exam["_ID"] . "\"></a>";
-    echo "<span class=\"exam_subject\">" . $exam["subject"] . ($exam["grp"] == "none" ? "" : " <span class=\"exam_group\">" . $exam["grp"] . "</span> ") . $fileStr . "</span>";
+    echo "<a href=\"#delete-exam\" class=\"link-delete trigger\" data-id=\"" . $exam["_ID"] . "\"></a>";
+    echo "<span class=\"exam_subject\">" . $exam["subject"] . ($exam["grp"] == "none" ? "" : "<span class=\"exam_group\">" . $exam["grp"] . "</span>") . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
     echo "<span class=\"exam_date\">" . $dateStr . "</span>";
     echo "</div></span>";
-    echo $fileEnd . "</td></tr>\n";
+    echo "</td></tr>\n";
   }
 }
 
