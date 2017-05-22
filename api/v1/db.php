@@ -93,9 +93,5 @@ class DB {
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
     return true;
   }
-
-  static function attachFile(string $user, string $nonce, string $eid, string $type, string $link) {
-    
-  }
 }
 ?>

@@ -23,9 +23,6 @@ switch($_POST['action']) {
   case 'updateExam':
     DB::updateExam($_POST['iid'], $_POST['nonce'], $_POST['eid'], $_POST['range'], $_POST['date']);
     break;
-  case 'attachLink':
-    DB::attachFile($_POST['iid'], $_POST['nonce'], $_POST['eid'], 'link', $_POST['link']);
-    break;
   default:
     echo "ERROR: Unknown action";
     exit(0);
