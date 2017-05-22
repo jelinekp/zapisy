@@ -4,7 +4,7 @@ var cfunc = function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Do prázdnin zbývá " + days + " dní ;)";
+  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Vysvědčení se samými jedničkami za " + days + " dní ;)";
   if (distance < 1000*60*60*24) {
     clearInterval(x);
     document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Prázdniny jsou tu ;)";
