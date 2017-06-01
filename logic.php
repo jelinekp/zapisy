@@ -56,9 +56,10 @@ function make_exams() {
       $fileLink = "<a href=\"" . $files[0]['data'] . "\" class=\"attachment-link\">";
       $fileEnd = "</a>";
     }
-    echo "<tr><td>" . $fileLink;
+    echo "<tr><td class=\"exam-cell\">";
+    echo "<a href=\"#delete-exam\" class=\"link-delete trigger\" data-id=\"" . $exam["_ID"] . "\"></a>";
+    echo $fileLink;
     echo "<span class=\"link-exam\"><div class=\"exam_item\">";
-    //echo "<a href=\"#delete-exam\" class=\"link-delete trigger\" data-id=\"" . $exam["_ID"] . "\"></a>";
     echo "<span class=\"exam_subject\">" . $exam["subject"] . ($exam["grp"] == "none" ? "" : " <span class=\"exam_group\">" . $exam["grp"] . "</span> ") . $fileStr . "</span>";
     echo "<span class=\"exam_range\">" . $exam["range"] . "</span>";
     echo "<span class=\"exam_date\">" . $dateStr . "</span>";

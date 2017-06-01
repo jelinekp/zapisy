@@ -375,9 +375,13 @@ td {
   display: none;
 }
 
-.exam_item:hover .link-delete {
+.exam-cell:hover .link-delete {
   display: block;
   cursor: pointer;
+}
+
+.exam-cell:hover .link-exam .exam_item {
+  background-color: rgba(127, 127, 127, 0.1);
 }
 
 /*tutorial*/
