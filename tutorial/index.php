@@ -1,3 +1,4 @@
+<?php require "../logic.php"; require "../provider.php"; ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,9 +9,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="author" content="github.com/jelinekp/zapisy" />
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic,100italic,100&subset=latin-ext' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="/common.css"/>
-    <link rel="stylesheet" media="(min-width: 731px)" type="text/css" href="/style.css"/>
-    <link rel="stylesheet" media="(max-width: 730px)" type="text/css" href="/mobile.css"/>
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/<?= V::file("common.css") ?>"/>
+    <link rel="stylesheet" media="(min-width: 731px)" type="text/css" href="/<?= V::file("style.css") ?>"/>
+    <link rel="stylesheet" media="(max-width: 730px)" type="text/css" href="/<?= V::file("mobile.css") ?>"/>
     <title>Zápisy - tutoriál</title>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,6 +34,15 @@
           Potřebujeme, aby se Zápisy zdokonalily. Pomožte opravováním chyb, vkládáním návrhů, ...
       <hr />
         <ul>
+          <li><span class="bolder">Mobilní aplikace Zápisy™ pro Android</span>
+            <br />Nejjednodušší cesta k zápisům i písemkám. Podporuje také notifikace.</li>
+            <a href="https://play.google.com/store/apps/details?id=cz.wz.markaos.workbooks">
+              Odkaz na Zápisy™ na Google Play<br />
+            <img src="/img/tutorial/app.png" width="23%" title="Aplikace na Google Play" />
+          </a>
+        </ul>
+      <hr />
+        <ul>
           <li><span class="bolder">Systém komentářů </span>
             <br /> Neváhejte a komentujte, potřebujeme zpětnou vazbu.</li>
             <img src="/img/tutorial/comment.png" width="55%" title="Komentování" />
@@ -47,7 +58,7 @@
             <img src="/img/tutorial/suggesting.png" width="95%" />
             <br />
               Po napsání návrhu přijde správcům oznámení a situaci vyřeší.
-              Bylo by super, kdybyste byli přihlášeni Google účtem (aby návrhy nebyly anonymní).
+              Bylo by super, kdybyste byli přihlášeni  Google účtem (aby návrhy nebyly anonymní).
         </ul>
       <hr />
         <ul>
@@ -55,7 +66,7 @@
             <br />Pro snadnější orientaci ve velkých souborech (př archivy).</li>
             <br />
             <img src="/img/tutorial/outline-desktop.png" width="21%" title="Osnova na počítači" />
-            <img src="/img/tutorial/outline-mobile.png" width="30%" title="Osnova v mobilní aplikaci Dokumnety" />
+            <img src="/img/tutorial/outline-mobile.png" width="30%" title="Osnova v mobilní aplikaci Dokumenty" />
             <br />
         </ul>
         <hr />
