@@ -150,7 +150,7 @@ class V {
   static function file(string $name) {
     if(static::$vfile_cache == null) {
       static::$vfile_cache = array();
-      $json = json_decode(file_get_contents("version.json"), true);
+      $json = json_decode(file_get_contents(dirname(__FILE__) . "/version.json"), true);
       foreach($json as $file) {
         static::$vfile_cache[$file["file"]] = $file["version"];
       }
