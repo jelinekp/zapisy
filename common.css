@@ -67,7 +67,7 @@ td {
 }
 
 .link:active {
-  background-color: lightgray;
+  background-color: rgba(127, 127, 127, 0.5);
 }
 
 .link-archive {
