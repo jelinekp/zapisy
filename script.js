@@ -1,11 +1,11 @@
-var countDownDate = new Date("Sep 4, 2017 7:45:00").getTime();
+var countDownDate = new Date("Jun 29, 2018 8:00:00").getTime();
 var x;
 var cfunc = function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Jupí, škola začíná už za " + days + " dní ;)";
-  if (distance < 1000*60*60*24) {
+  var days = Math.floor(distance / (1000 * 60));
+  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Další letní prázdniny už za " + days + " minut ;)";
+  if (distance < 1000*60) {
     clearInterval(x);
     document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Vítejte ve 4.E!";
   }
