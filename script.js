@@ -3,9 +3,9 @@ var x;
 var cfunc = function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60));
-  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Další letní prázdniny už za " + days + " minut ;)";
-  if (distance < 1000*60) {
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Letní prázdniny už za " + days + " dní ;)";
+  if (distance < 1000*60*60*24) {
     clearInterval(x);
     document.getElementById("stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek").innerHTML = "Vítejte ve 4.E!";
   }
