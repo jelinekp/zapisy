@@ -70,7 +70,7 @@
       <h1>Zápisy 4.E</h1>
       <p>Archiv obsahuje starší zápisy, <a href="tutorial">užitečné tipy a triky najdete zde.</a></p>
       <div id="stupidCountdownContainer">
-        <span class="stupidElement" id="stupidHolidayCountdownRequestedByRadekDesignedByPavelAndModifiedByMarek"></span>
+        <span class="stupidElement" id="stupidHolidayCountdownRequestedByRadekDesignedByPavelModifiedByMarekAndMaintainedByTheSamePavelWhoDesignedItThatIsGoingToBeAddedToTheMobileAppWhenAndroidStudioStopsTellingMeThereIsNonexistentDependencyInTheProject-BtwThisAlsoCompletelyBreaksNanoSoIHaveToUseGedit"></span>
       </div>
       <table>
         <?php make_subjects(); ?>
