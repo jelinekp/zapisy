@@ -68,7 +68,7 @@
     </div>
     <div id="containerHack"><div id="container">
       <h1>Zápisy 4.E</h1>
-      <p>Archiv obsahuje starší zápisy, <a href="tutorial">užitečné tipy a triky najdete zde.</a></p>
+      <p>Tipy a triky najdete <a href="tutorial">zde</a>, mobilní aplikaci <a href="https://play.google.com/store/apps/details?id=cz.wz.markaos.workbooks">zde</a></p>
       <div id="stupidCountdownContainer">
         <span class="stupidElement" id="stupidHolidayCountdownRequestedByRadekDesignedByPavelModifiedByMarekAndMaintainedByTheSamePavelWhoDesignedItThatIsGoingToBeAddedToTheMobileAppWhenAndroidStudioStopsTellingMeThereIsNonexistentDependencyInTheProject-BtwThisAlsoCompletelyBreaksNanoSoIHaveToUseGedit"></span>
       </div>
