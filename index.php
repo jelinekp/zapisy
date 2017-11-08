@@ -77,13 +77,12 @@
       </table>
       <p>Pokud byste našli chybu v učivu, tak ji ihned opravte - případně můžete komentovat učivo. Jakákoli pomoc je velmi důležitá.
         Můžete přidávat obrázky, náčrty, vzorce, ... <br /> Zápisy z fyziky již nebudou dostupné.<br />Za chyby v učivu v žádném případě nezodpovídáme. <br />
-        Hlavní přispěvatelé: <a href="https://plus.google.com/117073341275292426772">baxit</a>, <a href="http://jelinekp.wz.cz/">jelinekp</a>
-        a <a href="https://markaos.cz/">Markaos</a><br />
+        Hlavní přispěvatelé: <a href="http://jelinekp.wz.cz/">jelinekp</a>, <a href="https://markaos.cz/">Markaos</a>, <a href="">Oskar</a> a <a href="">Dávid</a>.<br />
         Mobilní aplikace (i pro offline zápisy):
         Dokumenty Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Google Play</a>,
         <a href="https://itunes.apple.com/cz/app/google-docs/id842842640?mt=8">App Store</a>)<br>
-        <a href="https://github.com/jelinekp/zapisy">Projekt na GitHubu (jelinekp/zapisy)</a>
-        <span style="text-align: center; width: 100%; display: block;">© 2016</span>
+        Projekt na GitHubu: <a href="https://github.com/jelinekp/zapisy">jelinekp/zapisy</a>
+        <span style="text-align: center; width: 100%; display: block;">© 2016 - 2018</span>
       </p>
     </div></div>
     <div id="examsContainer">
