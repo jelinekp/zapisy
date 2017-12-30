@@ -77,7 +77,7 @@
       </table>
       <p>Pokud byste našli chybu v učivu, tak ji ihned opravte - případně můžete učivo komentovat.<br />
 	Za chyby v učivu v žádném případě nezodpovídáme. <br />
-        Hlavní kontributoři: <a href="http://jelinekp.wz.cz/">jelinekp</a>, <a href="https://markaos.cz/">Markaos</a>, <a href="">Oskar</a> a <a href="">Dávid</a>.<br />
+        Hlavní kontributoři: <a href="http://jelinekp.wz.cz/">jelinekp</a>, <a href="https://markaos.cz/">Markaos</a>, <a href="">Oskar</a> a <a href="https://github.com/davidjenco/">Dávid</a>.<br />
         Mobilní aplikace (i pro offline zápisy):
         Dokumenty Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Google Play</a>,
         <a href="https://itunes.apple.com/cz/app/google-docs/id842842640?mt=8">App Store</a>)<br>
