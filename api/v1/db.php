@@ -42,7 +42,12 @@ class DB {
     return true;
   }
 
-  static function addExam(string $user, string $nonce, string $subject, string $range, string $date) {
+  static function addExam(string $user, string $nonce, string $subject, string $range, string $date, string $code) {
+    if($code === false && Config::$login_needed) {
+      echo '{"status":"error","message":"User code required","code":3}';
+      return false;
+    }
+
     static::prepare();
     if(!static::verifyActionID($user, $nonce)) {
       echo '{"status":"error","message":"Wrong nonce","code":1}';
@@ -65,6 +70,11 @@ class DB {
   }
 
   static function deleteExam(string $user, string $nonce, string $eid) {
+    if($code === false && Config::$login_needed) {
+      echo '{"status":"error","message":"User code required","code":3}';
+      return false;
+    }
+
     static::prepare();
     if(!static::verifyActionID($user, $nonce)) {
       echo '{"status":"error","message":"Wrong nonce","code":1}';
@@ -79,6 +89,11 @@ class DB {
   }
 
   static function updateExam(string $user, string $nonce, string $eid, string $range, string $date) {
+    if($code === false && Config::$login_needed) {
+      echo '{"status":"error","message":"User code required","code":3}';
+      return false;
+    }
+
     static::prepare();
     if(!static::verifyActionID($user, $nonce)) {
       echo '{"status":"error","message":"Wrong nonce","code":1}';
@@ -92,6 +107,26 @@ class DB {
 
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
     return true;
+  }
+
+  static function verifyUserCode(string $code) {
+    static::prepare();
+    $query = static::$instance->prepare('SELECT name FROM authors WHERE pass=?');
+    $query->execute([$code]);
+    $res = $query->fetchAll();
+    if(count($res) == 1) {
+      return $res[0]['name'];
+    }
+    return false;
+  }
+
+  static function login(string $code) {
+    $name = static::verifyUserCode();
+    if($name !== false) {
+      echo '{"status":"OK","name":"' . $name . '"}';
+    } else {
+      echo '{"status":"error","message":"Unknown code","code":2}';
+    }
   }
 
   static function attachFile(string $user, string $nonce, string $eid, string $type, string $link) {
