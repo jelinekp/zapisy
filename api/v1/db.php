@@ -43,9 +43,14 @@ class DB {
   }
 
   static function addExam(string $user, string $nonce, string $subject, string $range, string $date, string $code) {
-    if($code === false && Config::$login_needed) {
+    if($code == false && Config::$login_needed) {
       echo '{"status":"error","message":"User code required","code":3}';
       return false;
+    } else if (Config::$login_needed) {
+      if(!static::verifyUserCode($code)) {
+        echo '{"status":"error","message":"Invalid code required","code":4}';
+        return false;
+      }
     }
 
     static::prepare();
@@ -69,10 +74,15 @@ class DB {
     return true;
   }
 
-  static function deleteExam(string $user, string $nonce, string $eid) {
-    if($code === false && Config::$login_needed) {
+  static function deleteExam(string $user, string $nonce, string $eid, string $code) {
+    if($code == false && Config::$login_needed) {
       echo '{"status":"error","message":"User code required","code":3}';
       return false;
+    } else if (Config::$login_needed) {
+      if(!static::verifyUserCode($code)) {
+        echo '{"status":"error","message":"Invalid code required","code":4}';
+        return false;
+      }
     }
 
     static::prepare();
@@ -88,10 +98,15 @@ class DB {
     return true;
   }
 
-  static function updateExam(string $user, string $nonce, string $eid, string $range, string $date) {
-    if($code === false && Config::$login_needed) {
+  static function updateExam(string $user, string $nonce, string $eid, string $range, string $date, string $code) {
+    if($code == false && Config::$login_needed) {
       echo '{"status":"error","message":"User code required","code":3}';
       return false;
+    } else if (Config::$login_needed) {
+      if(!static::verifyUserCode($code)) {
+        echo '{"status":"error","message":"Invalid code required","code":4}';
+        return false;
+      }
     }
 
     static::prepare();
@@ -121,7 +136,7 @@ class DB {
   }
 
   static function login(string $code) {
-    $name = static::verifyUserCode();
+    $name = static::verifyUserCode($code);
     if($name !== false) {
       echo '{"status":"OK","name":"' . $name . '"}';
     } else {
