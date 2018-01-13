@@ -1,5 +1,6 @@
 RewriteEngine on
 RewriteRule "exams\.json" "exams-gen\.php" [PT]
+RewriteRule "zff\.json" "zff-gen\.php" [PT]
 
 <FilesMatch "\.(gif|jpg|png|js|svg|css)$">
   ExpiresActive On
