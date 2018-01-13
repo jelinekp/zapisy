@@ -22,10 +22,32 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 
+var zffRequest = new XMLHttpRequest();
+zffRequest.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        zffData = JSON.parse(this.responseText);
+        console.log(zffData);
+        var zffContainer = document.getElementById("zffContainer");
+        console.log(zffContainer);
+        var htmlString = '<table class="zffTable">';
+        for(var i = 0; i < zffData.length; i++) {
+          console.log(zffData[i].title);
+          htmlString += "<tr><td>" + (zffData[i].title) + "</td></tr>";
+        }
+        htmlString += "</table>";
+        zffContainer.appendChild(document.createRange().createContextualFragment(htmlString));
+    }
+};
+
+function loadZff() {
+  zffRequest.open("GET", "zff.json", true);
+  zffRequest.send();
+}
 
 function load() {
   xmlhttp.open("GET", "motd.json", true);
   xmlhttp.send();
+  loadZff();
   $(".trigger").leanModal({closeButton: ".modal-close"});
   $(".input-date").datepicker({
     firstDay: 1,
