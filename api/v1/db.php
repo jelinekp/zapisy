@@ -2,6 +2,7 @@
 require_once "../../config.php";
 class DB {
   private static $instance = null;
+  private static $author = null;
 
   static function prepare() {
     if(static::$instance == null) {
@@ -67,8 +68,8 @@ class DB {
 
     $date = DateTime::createFromFormat('!d.m.Y', $date)->getTimestamp();
 
-    $query = static::$instance->prepare('INSERT INTO exams (`subject`, `range`, `exam_date`, `notes`, `author`, `grp`) VALUES (?, ?, ?, "", 1, ?)');
-    $query->execute([$subject, $range, date("Y-m-d", $date), $grp]);
+    $query = static::$instance->prepare('INSERT INTO exams (`subject`, `range`, `exam_date`, `notes`, `author`, `grp`) VALUES (?, ?, ?, "", ?, ?)');
+    $query->execute([$subject, $range, date("Y-m-d", $date), static::$author, $grp]);
 
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
     return true;
@@ -117,8 +118,8 @@ class DB {
 
     $date = DateTime::createFromFormat('!d.m.Y', $date)->getTimestamp();
 
-    $query = static::$instance->prepare('UPDATE exams SET `range`=?, `exam_date`=? WHERE `_ID`=?');
-    $query->execute([$range, date("Y-m-d", $date), $eid]);
+    $query = static::$instance->prepare('UPDATE exams SET `range`=?, `exam_date`=?, `author_ID`=? WHERE `_ID`=?');
+    $query->execute([$range, date("Y-m-d", $date), static::$author, $eid]);
 
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
     return true;
@@ -126,10 +127,11 @@ class DB {
 
   static function verifyUserCode(string $code) {
     static::prepare();
-    $query = static::$instance->prepare('SELECT name FROM authors WHERE pass=?');
+    $query = static::$instance->prepare('SELECT name,author_ID FROM authors WHERE pass=?');
     $query->execute([$code]);
     $res = $query->fetchAll();
     if(count($res) == 1) {
+      static::$author = $res[0]['author_ID'];
       return $res[0]['name'];
     }
     return false;
