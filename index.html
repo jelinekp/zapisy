@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://jelinekp.wz.cz/zapisy-redesign/ -->
+<html class="gr__jelinekp_wz_cz"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://jelinekp.wz.cz/zapisy-redesign/img/ikona.ico">
+    <link rel="“apple-touch-icon“" href="http://jelinekp.wz.cz/zapisy-redesign/img/zapisy-512px.png">
+    <link rel="icon" type="image/png" href="http://jelinekp.wz.cz/zapisy-redesign/img/zapisy-512px.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content="github.com/jelinekp/zapisy">
+    <meta name="description" content="Zápisy 3.E z GFPVM">
+    <link href="icon" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="new-common.css">
+    <link rel="stylesheet" media="(min-width: 731px)" type="text/css" href="style.css">
+    <link rel="stylesheet" media="(max-width: 730px)" type="text/css" href="mobile.css">
+    <title>Zápisy</title>
+    <script async="" src="analytics.js"></script><script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75034559-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery.leanModal.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="load()" data-gr-c-s-loaded="true">
+    <div id="lean_overlay"></div>
+    <div id="add-exam" class="lean_modal">
+      <div style="position: absolute; top: 16px; left: 50%;">
+        <div style="position: relative; left: -50%;">
+          <span class="modal-title">Nová písemka</span>
+        </div>
+      </div>
+      <div class="modal-close"></div>
+      <form method="POST" action="http://jelinekp.wz.cz/zapisy-redesign/add.php">
+        <select class="input-select" name="subject" placeholder="Předmět">
+          <option value="Matematika;none">Matematika</option>
+<option value="Český jazyk a literatura;none">Český jazyk a literatura</option>
+<option value="Fyzika;none">Fyzika</option>
+<option value="Chemie;none">Chemie</option>
+<option value="Základy společenských věd;none">Základy společenských věd</option>
+<option value="Biologie;none">Biologie</option>
+<option value="Dějepis;none">Dějepis</option>
+<option value="Hudební výchova;hud">Hudební výchova</option>
+<option value="Výtvarná výchova;vyt">Výtvarná výchova</option>
+<option value="Anglický jazyk (ang1);ang1">Anglický jazyk (ang1)</option>
+<option value="Anglický jazyk (ang2);ang2">Anglický jazyk (ang2)</option>
+<option value="Německý jazyk (něm1);něm1">Německý jazyk (něm1)</option>
+<option value="Německý jazyk (něm2);něm2">Německý jazyk (něm2)</option>
+<option value="Francouzský jazyk;fra">Francouzský jazyk</option>
+<option value="Informatika (ang1);ang1">Informatika (ang1)</option>
+<option value="Informatika (ang2);ang2">Informatika (ang2)</option>
+<option value="Zeměpis;none">Zeměpis</option>
+        </select><br>
+        <input class="input-text" type="text" name="range" placeholder="Rozsah"><br>
+        <input class="input-date" type="text" name="date" placeholder="Datum"><br>
+        <input type="hidden" name="author" value="-1">
+        <input type="hidden" name="notes" value="">
+        <input class="button-send" type="submit" name="sent" value="PŘIDAT">
+      </form>
+    </div>
+    <div id="delete-exam" class="lean_modal">
+      <div style="position: absolute; top: 16px; left: 50%;">
+        <div style="position: relative; left: -50%;">
+          <span class="modal-title">Odstranit písemku</span>
+        </div>
+      </div>
+      <div class="modal-close"></div>
+      <span class="delete-exam-text">Opravdu chcete tuto písemku odstranit?</span>
+      <form method="POST" action="http://jelinekp.wz.cz/zapisy-redesign/delete.php">
+        <input type="hidden" name="id" id="delete-exam-id">
+        <input class="button-send" type="submit" name="sent" value="ODSTRANIT">
+      </form>
+    </div>
+    <div id="containerHack"><div id="container">
+      <h1>Zápisy 4.E</h1>
+      <p>Tipy a triky najdete <a href="http://jelinekp.wz.cz/zapisy-redesign/tutorial">zde</a>, mobilní aplikaci <a href="https://play.google.com/store/apps/details?id=cz.wz.markaos.workbooks">zde</a></p>
+      <div id="stupidCountdownContainer">
+        <span class="stupidElement" id="stupidHolidayCountdownRequestedByRadekDesignedByPavelModifiedByMarekAndMaintainedByTheSamePavelWhoDesignedItThatIsGoingToBeAddedToTheMobileAppWhenAndroidStudioStopsTellingMeThereIsNonexistentDependencyInTheProject-BtwThisAlsoCompletelyBreaksNanoSoIHaveToUseGedit"></span>
+      </div>
+      <table>
+<tbody><tr><td class="headers">
+&nbsp;Obecné
+<table>
+<tr><td><a href="https://docs.google.com/document/d/11pIdgU1CwxnmGv9BXsAPKL5bzJEh58C_ECT8nr1AIVo/edit?usp=sharing"><div class="link"><span class="link-text">Biologie</span></div><div class="subject-icon" style="background-image: url(&#39;img/biology.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1LQuA04JB-Pt93-8HwyjrermeyFmZLR65Hdl-Cxypl-U/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/128VQPB620GnzLtioSXTzquJqhQJ6-Iyhjop-5D8EI2I/edit?usp=sharing"><div class="link"><span class="link-text">Dějepis</span></div><div class="subject-icon" style="background-image: url(&#39;img/history.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1NypN22Yzmnl_LSmDuDCWn2vmzmCxnl0BGsE-IDWgrKs/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/1-741ksaGohohnrOl3DeOYXY7vUExp-zuFSfiQ4slhlQ/edit?usp=sharing"><div class="link"><span class="link-text">Chemie</span></div><div class="subject-icon" style="background-image: url(&#39;img/chemistry.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1ZR3U6O_NeN89G-oOtUytWY1vrU0LuIlLzB5bgqa0S00/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/1L1SoYbA0dpFODTf1yxNGh6IK-TSAOEgjg0gXegFgWqQ/edit?usp=sharing"><div class="link"><span class="link-text">Zeměpis</span></div><div class="subject-icon" style="background-image: url(&#39;img/geography.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1U19KWUzK0FfByUadEXOWO3Ejg9lfeRY5xnMQ4KtAHvE/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+        <tr><td><a href="https://docs.google.com/document/d/11Xnw-qA_qtXr-bPacrZOf_DCTxsZX0LZZd0yGPwR-R8/edit?usp=sharing"><div class="link"><span class="link-text">ZSV</span></div><div class="subject-icon" style="background-image: url(&#39;img/civics.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1gQiBD1VzRBDIvppEupXyZX1AlDgZ0O4EdKwSwiWX-MQ/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+</table>
+</td></tr>
+<tr><td class="headers">
+&nbsp;Český jazyk a literatura
+<table>
+<tr><td><a href="https://docs.google.com/document/d/1FmbhmTOfhgsEAi9FmgA8VLChvt0355eY4TcOX4DhLpM/edit?usp=sharing"><div class="link"><span class="link-text">Literatura</span></div><div class="subject-icon" style="background-image: url(&#39;img/literature.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1LZtpoj1WoubWCbYeE_D2-_bORzAYk9F8lZ_g3BJMI3g/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/1bwWybOcZKQMX4_FIY6pSdY69u9Ufsx0WbsOrxYIQAeU/edit?usp=sharing"><div class="link"><span class="link-text">Mluvnice</span></div><div class="subject-icon" style="background-image: url(&#39;img/grammar.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1nlu-f8s6GJ3ulLsgESeMFBDy2HCZJfXjn_6Qku_Vl_M/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/1AK9mJlQhzhpIunhtqecEUNzbokpR5uStgkBNeyBtreU/edit?usp=sharing"><div class="link"><span class="link-text">Sloh</span></div><div class="subject-icon" style="background-image: url(&#39;img/style.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1pzj8-bBdog3IiYJejcChgrNlzHDecpygNy-Hjuzjc0A/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+</table>
+</td></tr>
+<tr><td class="headers">
+&nbsp;Jazyky
+<table>
+<tr><td><a href="https://docs.google.com/document/d/1XuNTgI0PJzJjOjJzDq6APlSPEfydXxBnLipjqGecY8Y/edit?usp=sharing"><div class="link"><span class="link-text">Angličtina (ang2)</span></div><div class="subject-icon" style="background-image: url(&#39;img/english.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1rlUfgCx4XP7UERnS4w8sASs7ogq7xycnwEFxYR1UEGw/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/1-8aBG1-HjBW-8F3t6C0cWV2Fo5AMQ6-BDWTn53H7JFk/edit"><div class="link"><span class="link-text">Němčina (něm1)</span></div><div class="subject-icon" style="background-image: url(&#39;img/german.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1Zj5YNgefXGvefQo0mgSZyTgzeE_uLCcmd0tEGlE84p0/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/111MqVG-OGiFX2BlONcWz-U-2yAo4T_F1OXT6ATa8v-U/edit?usp=sharing"><div class="link"><span class="link-text">Němčina (ang2)</span></div><div class="subject-icon" style="background-image: url(&#39;img/german.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1Ajk1-kWHjb516-enRL8SN8q9L9_PByn2QDqEJLIMZAs/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+</table>
+</td></tr>
+<tr><td class="headers">
+&nbsp;Ostatní
+<table>
+<tr><td><a href="https://docs.google.com/document/d/1FHmwiJ1_dsWD_hbjgDhfM83dWn1vDng1onN0XAZJSwQ/edit?usp=sharing"><div class="link"><span class="link-text">Informatika</span></div><div class="subject-icon" style="background-image: url(&#39;img/it.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/17rsELaYrCND7j-vuwVsoyB-8a0SR-2wJcPPhjA7nnvE/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/10YuOxsS5yC_9A6VJwwiE6U3U0lbNFIR-CXEQXkMeAmY/edit?usp=sharing"><div class="link"><span class="link-text">Hudebka</span></div><div class="subject-icon" style="background-image: url(&#39;img/music.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1EStBCZIca0VXVbwYNjSdIhCaRgiFC_zP9JXjWbp3w5g/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+
+<tr><td><a href="https://docs.google.com/document/d/1OLdLeODhiI7gGxkwv6Kb7TkS08wTfZq-BASPdHBu_wY/edit?usp=sharing"><div class="link"><span class="link-text">Výtvarka</span></div><div class="subject-icon" style="background-image: url(&#39;img/art.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/13jj_yNOjDibWaxlB4c042pfRM4l7a-r4uKFfUj9L71A/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+</table>
+</td></tr>
+<tr><td class="headers">
+&nbsp;Deprecated
+<table>
+<tr><td><a href="https://docs.google.com/document/d/10JMnsnZw1vxEjkExBsaMNE3SVM5g3ulGC3A22YOtgvg/edit?usp=sharing"><div class="link"><span class="link-text"><span class="smoother">Fyzika</span></span></div><div class="subject-icon" style="background-image: url(&#39;img/physics.svg&#39;)"></div></a><a href="https://docs.google.com/document/d/1lPdewGmQFJtkmm0LnYTNqGhzORa57yPgvS7aT7iBjLk/edit?usp=sharing"><div class="link-archive"><span class="link-archive-text">Archiv</span></div></a></td></tr>
+</table>
+</td></tr>
+      </tbody></table>
+      <p>
+	Starší zápisy jsou v archivech.<br />
+	Pokud byste našli chybu v učivu, tak ji ihned opravte - případně můžete učivo komentovat.<br>
+	Za chyby v učivu v žádném případě nezodpovídáme. <br>
+        Hlavní kontributoři: <a href="http://jelinekp.wz.cz/">jelinekp</a>, <a href="https://markaos.cz/">Markaos</a>, <a href="http://jelinekp.wz.cz/zapisy-redesign/">Oskar</a> a <a href="https://github.com/davidjenco/">Dávid</a>.<br>
+        Mobilní aplikace (i pro offline zápisy):
+        Dokumenty Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs">Google Play</a>,
+        <a href="https://itunes.apple.com/cz/app/google-docs/id842842640?mt=8">App Store</a>)<br>
+        Projekt na GitHubu: <a href="https://github.com/jelinekp/zapisy">jelinekp/zapisy</a>
+        <span style="text-align: center; width: 100%; display: block;">© 2016 - 2018</span>
+      </p>
+    </div></div>
+    <div id="examsContainer">
+      <h2>Písemky</h2>
+      <table>
+        <tbody><tr><td class="exam-cell"><a href="http://jelinekp.wz.cz/zapisy-redesign/#delete-exam" class="link-delete trigger" data-id="306"></a><span class="link-exam"><div class="exam_item"><span class="exam_subject">Německý jazyk <span class="exam_group">něm2</span> </span><span class="exam_range">Fráze</span><span class="exam_date">22.1.2018 (zítra)</span></div></span></td></tr>
+<tr><td class="exam-cell"><a href="http://jelinekp.wz.cz/zapisy-redesign/#delete-exam" class="link-delete trigger" data-id="310"></a><span class="link-exam"><div class="exam_item"><span class="exam_subject">Anglický jazyk  <span class="exam_group">ang2</span> </span><span class="exam_range">Trpný rod</span><span class="exam_date">22.1.2018 (zítra)</span></div></span></td></tr>
+<tr><td class="exam-cell"><a href="http://jelinekp.wz.cz/zapisy-redesign/#delete-exam" class="link-delete trigger" data-id="309"></a><span class="link-exam"><div class="exam_item"><span class="exam_subject">Biologie</span><span class="exam_range">Respirace až rozmnožování</span><span class="exam_date">26.1.2018 (za 5 dnů)</span></div></span></td></tr>
+        <tr>
+          <td class="exams-button-container">
+            <a href="http://jelinekp.wz.cz/zapisy-redesign/#add-exam" class="exams-button trigger">Přidat písemku</a>
+          </td>
+        </tr>
+      </tbody></table>
+      <div id="zffContainer">
+      </div>
+    </div>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
+
