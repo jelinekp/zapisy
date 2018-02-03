@@ -39,7 +39,7 @@ td {
 }
 
 .smoother {
-  color: grey;
+  color: grey !important;
 }
 
 .smoother-archive {
