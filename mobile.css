@@ -40,7 +40,7 @@ p {
   display: none;
 }
 
-.exam_item:hover .link-delete {
+.exam-item:hover .link-delete {
   display: none;
 }
 
