@@ -29,10 +29,11 @@ zffRequest.onreadystatechange = function() {
         console.log(zffData);
         var zffContainer = document.getElementById("zffContainer");
         console.log(zffContainer);
-        var htmlString = '<table class="zffTable">';
+        var htmlString = '<table class="zff-table">';
         for(var i = 0; i < zffData.length; i++) {
-          console.log(zffData[i].title);
-          htmlString += "<tr><td>" + (zffData[i].title) + "</td></tr>";
+          var title = zffData[i].title.replace("/node", "https://markaos.cz/node");
+          console.log(title);
+          htmlString += '<tr><td class="zff-cell">' + title + "</td></tr>";
         }
         htmlString += "</table>";
         zffContainer.appendChild(document.createRange().createContextualFragment(htmlString));
