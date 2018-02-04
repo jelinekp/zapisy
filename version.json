@@ -1,7 +1,7 @@
 [
   {
     "file": "common.css",
-    "version": 12
+    "version": 13
   },
   {
     "file": "style.css",
@@ -9,7 +9,7 @@
   },
   {
     "file": "mobile.css",
-    "version": 5
+    "version": 6
   },
   {
     "file": "script.js",
