@@ -45,6 +45,28 @@ function loadZff() {
   zffRequest.send();
 }
 
+function setTheme(classic) {
+  if(classic) document.cookie = "theme=classic; expires=Fri, 31 Dec 2038";
+  else document.cookie = "theme=broken; expires=Fri, 31 Dec 2038";
+  location.reload(true);
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 function load() {
   xmlhttp.open("GET", "motd.json", true);
   xmlhttp.send();
@@ -59,4 +81,13 @@ function load() {
     clickId = $(event.target).data("id");
     $("#delete-exam-id").attr("value", $(event.target).data("id"));
   });
+
+  var examsContainer = document.getElementById("examsContainer");
+  var themeButton = "";
+  if(getCookie("theme") == "classic") {
+    themeButton = "<a href=\"#theme\" class=\"button\" onClick=\"setTheme(false);\">Nové zobrazení</a>";
+  } else {
+    themeButton = "<a href=\"#theme\" class=\"button\" onClick=\"setTheme(true);\">Klasické zobrazení</a>";
+  }
+  examsContainer.appendChild(document.createRange().createContextualFragment(themeButton));
 }

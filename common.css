@@ -394,6 +394,13 @@ td.zff-cell {
   color: white;
 }
 
+.button {
+  padding-top: 48px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
 /*tutorial*/
 #page{
    position: relative;
