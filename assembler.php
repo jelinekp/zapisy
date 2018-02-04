@@ -50,6 +50,15 @@ class Assembler {
       call_user_func('assemble_' . str_replace('-', '_', $name), file_get_contents('parts/' . $name . '.html'), $vars);
     }
 
+    $vars = json_decode('values.json', true);
+    $output = preg_replace_callback('%\$VAR_([^$]+)\$%', function($match) {
+      if(!isset($vars[$match])) {
+        echo '<span style="display: none;">Couldn\'t find variable ' . $match . '</span>';
+        return '';
+      }
+      return $vars[$match];
+    }, $output);
+
     $output = str_replace('$PART_CSS$', static::assemble_css(), $output);
     $output = str_replace('$PART_JS$', static::assemble_js(), $output);
 
