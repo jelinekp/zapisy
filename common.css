@@ -303,7 +303,7 @@ td {
 }
 
 .input-select {
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-weight: bold;
@@ -323,7 +323,7 @@ td {
 }
 
 .input-date {
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   width: 477px;
@@ -391,10 +391,7 @@ td {
    border-radius: 3px;
    background-color: white;
    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-#page p{
-   padding: 0px 8px 1px 8px;
+   padding: 20px;
 }
 
 ul{
@@ -416,4 +413,23 @@ li{
 
 #center{
    text-align: center;
+}
+
+/*obrázky v tutoriálu*/
+.right{
+  float: right;
+}
+
+.border{
+  border: 3px;
+  border-color: black;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.top{
+  vertical-align: top;
+}
+
+.bottom{
+  vertical-align: bottom;
 }
