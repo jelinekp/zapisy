@@ -74,5 +74,10 @@
     "name": "item-exam-group",
     "dynamic": false,
     "variables": ["id", "subject", "range", "date-string", "group"]
+  },
+  {
+    "name": "item-group",
+    "dynamic": true,
+    "variables": ["group"]
   }
 ]
