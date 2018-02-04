@@ -2,7 +2,7 @@
 
 function assemble_list_workbooks($markup, $vars) {
   $output = '';
-  foreach(json_decode('workbooks.json', true) as $workbook) {
+  foreach(json_decode(file_get_contents('workbooks.json'), true) as $workbook) {
     $part = 'item-workbook';
     if(isset($sub["deprecated"]) && $sub["deprecated"] == true) {
       $part = 'item-workbook-deprecated';
