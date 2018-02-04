@@ -1,6 +1,6 @@
 <?php
 require_once "assembler.php";
 
-Assembler::assemble("frontpage");
+echo Assembler::assemble("frontpage");
 
 ?>
