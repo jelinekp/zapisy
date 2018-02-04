@@ -1,0 +1,18 @@
+<div id="add-exam" class="lean_modal">
+      <div style="position: absolute; top: 16px; left: 50%;">
+        <div style="position: relative; left: -50%;">
+          <span class="modal-title">Nová písemka</span>
+        </div>
+      </div>
+      <div class="modal-close"></div>
+      <form method="POST" action="add.php">
+        <select class="input-select" name="subject" placeholder="Předmět">
+          $DYN_subjects$
+        </select><br>
+        <input class="input-text" type="text" name="range" placeholder="Rozsah"><br>
+        <input class="input-date" type="text" name="date" placeholder="Datum"><br>
+        <input type="hidden" name="author" value="-1">
+        <input type="hidden" name="notes" value="">
+        <input class="button-send" type="submit" name="sent" value="PŘIDAT">
+      </form>
+    </div>
