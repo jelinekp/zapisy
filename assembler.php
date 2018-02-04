@@ -1,4 +1,5 @@
 <?php
+require_once('util.php');
 
 class Assembler {
   private static $parts = null;
@@ -8,7 +9,7 @@ class Assembler {
   private static function assemble_css() {
     $str = '';
     foreach(static::$css as $file) {
-      $str .= '<link rel="stylesheet" type="text/css" href="' . $file['file'] . '" ' . (isset($file['media']) ? 'media="' . $file['media'] . '" ' : '') . '/>\n';
+      $str .= '<link rel="stylesheet" type="text/css" href="' . V::file($file['file']) . '" ' . (isset($file['media']) ? 'media="' . $file['media'] . '" ' : '') . '/>\n';
     }
     return $str;
   }
@@ -16,7 +17,7 @@ class Assembler {
   private static function assemble_js() {
     $str = '';
     foreach(static::$js as $file) {
-      $str .= '<script src="' . $file . '"></script>';
+      $str .= '<script src="' . V::file($file) . '"></script>';
     }
     return $str;
   }
