@@ -39,7 +39,7 @@ td {
 }
 
 .smoother {
-  color: grey;
+  color: grey !important;
 }
 
 .smoother-archive {
@@ -111,14 +111,14 @@ td {
   background-repeat: no-repeat;
 }
 
-.exam_subject {
+.exam-subject {
   color: black;
   display: block;
   font-size: 16px;
   font-weight: bold;
 }
 
-.exam_group {
+.exam-group {
   color: #777777;
   background-color: #e5e5e5;
   border-radius: 8px;
@@ -127,19 +127,19 @@ td {
   display: inline;
 }
 
-.exam_range {
+.exam-range {
   color: black;
   text-decoration: none;
   display: block;
 }
 
-.exam_item {
+.exam-item {
   color: black;
   text-decoration: none;
   padding: 16px;
 }
 
-.exam_item:hover {
+.exam-item:hover {
   background-color: rgba(127, 127, 127, 0.1);
 }
 
@@ -380,7 +380,7 @@ td {
   cursor: pointer;
 }
 
-.exam-cell:hover .link-exam .exam_item {
+.exam-cell:hover .link-exam .exam-item {
   background-color: rgba(127, 127, 127, 0.1);
 }
 

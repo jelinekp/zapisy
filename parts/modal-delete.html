@@ -1,0 +1,13 @@
+<div id="delete-exam" class="lean_modal">
+  <div style="position: absolute; top: 16px; left: 50%;">
+    <div style="position: relative; left: -50%;">
+      <span class="modal-title">Odstranit písemku</span>
+    </div>
+  </div>
+  <div class="modal-close"></div>
+  <span class="delete-exam-text">Opravdu chcete tuto písemku odstranit?</span>
+  <form method="POST" action="delete.php">
+    <input type="hidden" name="id" id="delete-exam-id" />
+    <input class="button-send" type="submit" name="sent" value="ODSTRANIT">
+  </form>
+</div>

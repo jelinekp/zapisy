@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="img/ikona.ico" />
+  <link rel=“apple-touch-icon“ href="img/zapisy-512px.png" />
+  <link rel="icon" type="image/png" href="img/zapisy-512px.png" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="author" content="github.com/jelinekp/zapisy" />
+  <meta name="description" content="$VAR_description$" />
+  <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css" /> $PART_CSS$
+  <title>$VAR_title$</title>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-75034559-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery/jquery.leanModal.min.js"></script>
+  <script src="jquery/jquery-ui.min.js"></script>
+  $PART_JS$
+</head>
+<body onLoad="load()">
+  <div id="lean_overlay"></div>
+  $PART_modal-add$
+  $PART_modal-delete$
+  <div id="containerHack">
+    <div id="container">
+      <h1>$VAR_title$</h1>
+      $VAR_oneliner$
+      $PART_stupid-holiday-countdown$
+      $PART_list-workbooks$
+      $PART_footer$
+    </div>
+  </div>
+  <div id="examsContainer">
+    <h2>$VAR_title-exams$</h2>
+    $PART_list-exams$
+    $PART_list-zff$
+  </div>
+</body>
+
+</html>

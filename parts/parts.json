@@ -1,0 +1,78 @@
+[
+  {
+    "name": "frontpage",
+    "dynamic": false,
+    "css": [
+      {
+        "file": "common.css"
+      },
+      {
+        "file": "style.css",
+        "media": "(min-width: 731px)"
+      },
+      {
+        "file": "mobile.css",
+        "media":"(max-width: 730px)"
+      }
+    ],
+    "js": "script.js"
+  },
+  {
+    "name": "list-workbooks",
+    "dynamic": true
+  },
+  {
+    "name": "stupid-holiday-countdown",
+    "dynamic": false
+  },
+  {
+    "name": "list-exams",
+    "dynamic": true
+  },
+  {
+    "name": "list-zff",
+    "dynamic": false
+  },
+  {
+    "name": "modal-add",
+    "dynamic": true
+  },
+  {
+    "name": "modal-delete",
+    "dynamic": false
+  },
+  {
+    "name": "footer",
+    "dynamic": false
+  },
+  {
+    "name": "item-workbook",
+    "dynamic": false,
+    "variables": ["name", "icon", "url", "url-archive"]
+  },
+  {
+    "name": "item-workbook-deprecated",
+    "dynamic": false,
+    "variables": ["name", "icon", "url", "url-archive"]
+  },
+  {
+    "name": "item-exam",
+    "dynamic": false,
+    "variables": ["id", "subject", "range", "date-string"]
+  },
+  {
+    "name": "item-exam-attachment",
+    "dynamic": false,
+    "variables": ["id", "subject", "range", "date-string", "attachment"]
+  },
+  {
+    "name": "item-exam-group-attachment",
+    "dynamic": false,
+    "variables": ["id", "subject", "range", "date-string", "attachment", "group"]
+  },
+  {
+    "name": "item-exam-group",
+    "dynamic": false,
+    "variables": ["id", "subject", "range", "date-string", "group"]
+  }
+]
