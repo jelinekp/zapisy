@@ -65,5 +65,15 @@
     "name": "item-exam-attachment",
     "dynamic": false,
     "variables": ["id", "subject", "range", "date-string", "attachment"]
+  },
+  {
+    "name": "item-exam-group-attachment",
+    "dynamic": false,
+    "variables": ["id", "subject", "range", "date-string", "attachment", "group"]
+  },
+  {
+    "name": "item-exam-group",
+    "dynamic": false,
+    "variables": ["id", "subject", "range", "date-string", "group"]
   }
 ]
