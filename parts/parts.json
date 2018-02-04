@@ -23,8 +23,7 @@
   },
   {
     "name": "stupid-holiday-countdown-etc",
-    "dynamic": false,
-    "js": "countdown.js"
+    "dynamic": false
   },
   {
     "name": "list-exams",
