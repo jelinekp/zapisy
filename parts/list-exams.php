@@ -1,5 +1,5 @@
 <?php
-require_once('config.php');
+require_once('../config.php');
 
 function assemble_list_exams($markup, $vars) {
   $output = '';
