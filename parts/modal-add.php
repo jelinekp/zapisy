@@ -1,4 +1,5 @@
 <?php
+require_once('provider.php');
 
 function assemble_modal_add($markup, $vars) {
   $subjects = Provider::getSubjects();
