@@ -58,22 +58,22 @@
   {
     "name": "item-exam",
     "dynamic": false,
-    "variables": ["id", "subject", "range", "date-string"]
+    "variables": ["id", "subject", "range", "date-string", "author"]
   },
   {
     "name": "item-exam-attachment",
     "dynamic": false,
-    "variables": ["id", "subject", "range", "date-string", "attachment"]
+    "variables": ["id", "subject", "range", "date-string", "author", "attachment"]
   },
   {
     "name": "item-exam-group-attachment",
     "dynamic": false,
-    "variables": ["id", "subject", "range", "date-string", "attachment", "group"]
+    "variables": ["id", "subject", "range", "date-string", "author", "attachment", "group"]
   },
   {
     "name": "item-exam-group",
     "dynamic": false,
-    "variables": ["id", "subject", "range", "date-string", "group"]
+    "variables": ["id", "subject", "range", "date-string", "author", "group"]
   },
   {
     "name": "item-group",

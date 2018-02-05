@@ -8,7 +8,7 @@ function assemble_list_exams($markup, $vars) {
     'mysql:host=' . Config::$db_host . ';dbname=' . Config::$db_name,
     Config::$db_user, Config::$db_pass
   );
-  $query = $db->prepare('SELECT * FROM exams ORDER BY exam_date ASC;');
+  $query = $db->prepare('SELECT exams._ID, exams.exam_date, exams.exam_date_uc, exams.range, exams.subject, exams.grp, authors.name FROM exams INNER JOIN authors ON exams.author=authors.author_ID ORDER BY exam_date ASC;');
   $query->execute();
   $exams = $query->fetchAll();
   $query = $db->prepare('SELECT * FROM exam_files WHERE exam_ID=?');
@@ -30,7 +30,8 @@ function assemble_list_exams($markup, $vars) {
       'id'          => $exam['_ID'],
       'subject'     => $exam['subject'],
       'range'       => $exam['range'],
-      'date-string' => $dateStr
+      'date-string' => $dateStr,
+      'author'      => $exam['name']
     );
 
     if($exam['grp'] != 'none') {

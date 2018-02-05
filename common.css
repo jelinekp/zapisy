@@ -384,6 +384,14 @@ td {
   background-color: rgba(127, 127, 127, 0.1);
 }
 
+.exam-author {
+  color: #999999;
+  font-size: 12px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
 td.zff-cell {
   background-color: transparent;
   border-radius: none;
