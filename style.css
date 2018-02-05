@@ -73,6 +73,10 @@ h1 {
   right: 0px;
 }
 
+.button {
+  padding-bottom: 48px;
+}
+
 @media(max-width: 1600px) {
   #containerHack {
     position: absolute;
