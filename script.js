@@ -85,9 +85,9 @@ function load() {
   var examsContainer = document.getElementById("examsContainer");
   var themeButton = "";
   if(getCookie("theme") == "classic") {
-    themeButton = "<a href=\"#theme\" class=\"button\" onClick=\"setTheme(false);\">Nové zobrazení</a>";
+    themeButton = "<a href=\"#theme\" class=\"theme-button\" onClick=\"setTheme(false);\">Nové zobrazení</a>";
   } else {
-    themeButton = "<a href=\"#theme\" class=\"button\" onClick=\"setTheme(true);\">Klasické zobrazení</a>";
+    themeButton = "<a href=\"#theme\" class=\"theme-button\" onClick=\"setTheme(true);\">Klasické zobrazení</a>";
   }
   examsContainer.appendChild(document.createRange().createContextualFragment(themeButton));
 }
