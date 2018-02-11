@@ -67,6 +67,11 @@ function getCookie(cname) {
     return "";
 }
 
+function logout() {
+  document.cookie = 'code=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  location.reload(true);
+}
+
 function load() {
   xmlhttp.open("GET", "motd.json", true);
   xmlhttp.send();
