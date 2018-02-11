@@ -220,7 +220,7 @@ td {
 
 .exams-button-container {
   font: Roboto, Arial;
-  padding: 16px;
+  padding-top: 16px;
   background-color: transparent;
   box-shadow: none;
 }
@@ -421,6 +421,24 @@ td.zff-cell {
   margin-left: 8px;
   font-size: 16px;
   font-weight: 900;
+}
+
+.username {
+  position: absolute;
+  left: 8px;
+  font-weight: normal;
+  color: white;
+}
+
+.link-logout {
+  position: absolute;
+  right: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.link-logout:hover {
+  color: white;
 }
 
 /*tutorial*/

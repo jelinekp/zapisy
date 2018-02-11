@@ -1,0 +1,19 @@
+$COND-TRUE$
+<tr>
+  <td class="exams-button-container">
+    <a href="#add-exam" class="exams-button trigger">Přidat písemku</a>
+  </td>
+</tr>
+<tr>
+  <td class="exams-button-container">
+    <span class="username">$DYN_name$</span><a href="#logout" class="link-logout" onClick="logout();">Odhlásit</a>
+  </td>
+</tr>
+$COND-END$
+$COND-FALSE$
+<tr>
+  <td class="exams-button-container">
+    <a href="#login" class="exams-button trigger">Přihlásit se</a>
+  </td>
+</tr>
+$COND-END$

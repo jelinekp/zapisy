@@ -42,6 +42,10 @@
     "dynamic": false
   },
   {
+    "name": "modal-login",
+    "dynamic": false
+  },
+  {
     "name": "footer",
     "dynamic": false
   },
@@ -79,5 +83,9 @@
     "name": "item-group",
     "dynamic": true,
     "variables": ["group"]
+  },
+  {
+    "name": "userbox",
+    "dynamic": true
   }
 ]

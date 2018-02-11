@@ -2,6 +2,12 @@
 require_once('config.php');
 
 function assemble_list_exams($markup, $vars) {
+  preg_match_all('%\$PART_([^$]+)\$%', $markup, $parts);
+  foreach($parts[1] as $part) {
+    if($part == 'CSS' || $part == 'JS') continue;
+    $markup = str_replace('$PART_' . $part . '$', Assembler::assemble($part), $markup);
+  }
+
   $output = '';
 
   $db = new PDO(
