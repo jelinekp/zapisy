@@ -1,7 +1,7 @@
 [
   {
     "file": "common.css",
-    "version": 17
+    "version": 18
   },
   {
     "file": "style.css",
@@ -13,6 +13,6 @@
   },
   {
     "file": "script.js",
-    "version": 13
+    "version": 14
   }
 ]
