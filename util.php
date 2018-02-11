@@ -1,5 +1,5 @@
 <?php
-require "config.php";
+require_once "config.php";
 
 function get_diff($time) {
   $date = new DateTime($time);
@@ -25,6 +25,25 @@ function get_diff($time) {
   } else {
     return abs($days) . " dny zpátky";
   }
+}
+
+function get_user() {
+  if(isset($_COOKIE['code'])) {
+    $sql = new PDO (
+      "mysql:host=" . Config::$db_host . ";dbname=" . Config::$db_name,
+      Config::$db_user, Config::$db_pass
+    );
+    $query = $sql->prepare('SELECT name,author_ID FROM authors WHERE pass=?');
+    $query->execute([$_COOKIE['code']]);
+    $res = $query->fetchAll();
+    if(count($res) == 1) {
+      return array(
+        'name' => $res[0]['name'],
+        'id'   => $res[0]['author_ID']
+      );
+    }
+  }
+  return null;
 }
 
 class V {
