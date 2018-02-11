@@ -118,7 +118,7 @@ class DB {
 
     $date = DateTime::createFromFormat('!d.m.Y', $date)->getTimestamp();
 
-    $query = static::$instance->prepare('UPDATE exams SET `range`=?, `exam_date`=?, `author_ID`=? WHERE `_ID`=?');
+    $query = static::$instance->prepare('UPDATE exams SET `range`=?, `exam_date`=?, `author`=? WHERE `_ID`=?');
     $query->execute([$range, date("Y-m-d", $date), static::$author, $eid]);
 
     echo '{"status":"OK","nonce":' . static::getActionID($user) . '}';
