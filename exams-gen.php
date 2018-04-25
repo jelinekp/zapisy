@@ -10,6 +10,7 @@ if(isset($_GET['v'])) {
   switch($_GET['v']) {
     case 2: $version = 2; break;
     case 3: $version = 3; break;
+    case 4: $version = 4; break;
     default: $version = 1;
   }
 }
@@ -41,9 +42,12 @@ foreach($exams as $exam) {
     if($version >= 3 && count($files) > 0) {
       echo '"link":{"type":"' . $files[0]["type"] . '","data":"' . $files[0]["data"] . '"},';
     }
+    if($version >= 4) {
+      echo '"author":"' . $exam["author_name"] . '",'; // Yup, adding it back
+    }
     if($version == 1) {
       echo '"notes":"' . $exam["notes"] . '",';
-      echo '"author":"' . $exam["author_name"] . '",';
+      echo '"author":"' . $exam["author"] . '",';
     }
     echo '"id":' . $exam["_ID"];
   echo "}";
