@@ -14,7 +14,7 @@ if(isset($_GET['v'])) {
   }
 }
 
-$query = $db->prepare("SELECT * FROM exams ORDER BY exam_date ASC;");
+$query = $db->prepare("SELECT exams.*, authors.name as author_name FROM exams INNER JOIN authors ON exams.author = authors.author_ID ORDER BY exam_date ASC;");
 $query->execute();
 $exams = $query->fetchAll();
 
@@ -43,7 +43,7 @@ foreach($exams as $exam) {
     }
     if($version == 1) {
       echo '"notes":"' . $exam["notes"] . '",';
-      echo '"author":"' . $exam["author"] . '",';
+      echo '"author":"' . $exam["author_name"] . '",';
     }
     echo '"id":' . $exam["_ID"];
   echo "}";
