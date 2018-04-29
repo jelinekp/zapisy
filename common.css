@@ -8,8 +8,8 @@ p {
 }
 
 a {
-	color: #616161;
-	text-decoration: none;
+  color: #616161;
+  text-decoration: none;
 }
 
 h1 {
@@ -99,6 +99,7 @@ td {
   z-index: 5;
   display: inline-block;
   vertical-align: middle;
+  line-height: 22px;
 }
 
 .subject-icon {
