@@ -19,7 +19,7 @@ function assemble_list_exams($markup, $vars) {
   $query->execute();
   $exams = $query->fetchAll();
   $query = $db->prepare('SELECT * FROM exam_files WHERE exam_ID=?');
-  $style = get_user() === null ? "display: hidden;" : "";
+  $style = get_user() === null ? "display: none;" : "";
   foreach($exams as $exam) {
     $part = 'item-exam';
 
