@@ -1,5 +1,6 @@
 <?php
 require_once('config.php');
+require_once('util.php');
 
 function assemble_list_exams($markup, $vars) {
   preg_match_all('%\$PART_([^$]+)\$%', $markup, $parts);
@@ -18,6 +19,7 @@ function assemble_list_exams($markup, $vars) {
   $query->execute();
   $exams = $query->fetchAll();
   $query = $db->prepare('SELECT * FROM exam_files WHERE exam_ID=?');
+  $style = get_user() === null ? "display: hidden;" : "";
   foreach($exams as $exam) {
     $part = 'item-exam';
 
@@ -37,7 +39,8 @@ function assemble_list_exams($markup, $vars) {
       'subject'     => $exam['subject'],
       'range'       => $exam['range'],
       'date-string' => $dateStr,
-      'author'      => $exam['name']
+      'author'      => $exam['name'],
+      'close-style' => $style
     );
 
     if($exam['grp'] != 'none') {
