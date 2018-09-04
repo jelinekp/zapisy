@@ -18,7 +18,8 @@
         "name": "Chemie",
         "icon": "img/chemistry.svg",
         "url": "https://docs.google.com/document/d/1-741ksaGohohnrOl3DeOYXY7vUExp-zuFSfiQ4slhlQ/edit?usp=sharing",
-        "archive": "https://docs.google.com/document/d/1ZR3U6O_NeN89G-oOtUytWY1vrU0LuIlLzB5bgqa0S00/edit?usp=sharing"
+        "archive": "https://docs.google.com/document/d/1ZR3U6O_NeN89G-oOtUytWY1vrU0LuIlLzB5bgqa0S00/edit?usp=sharing",
+        "deprecated": true
       },
       {
         "name": "Zeměpis",
@@ -59,6 +60,29 @@
     ]
   },
   {
+    "name": "Semináře",
+    "workbooks": [
+      {
+        "name": "Seminář ze ZSV",
+        "icon": "img/civics.svg",
+        "url": "https://docs.google.com/document/d/1o4NX9xDaOXfltx7DYb6IRtI2i6C0DA4rgIYbIUBNrlE/edit?usp=sharing",
+        "archive": "about:blank"
+      },
+      {
+        "name": "Seminář z dějepisu",
+        "icon": "img/history.svg",
+        "url": "https://docs.google.com/document/d/1vDvttlIycQbIYIBN3omKAnVCw2vsGagc6P6o-T4JF6g/edit?usp=sharing",
+        "archive": "about:blank"
+      },
+      {
+        "name": "Seminář z programování",
+        "icon": "img/it.svg",
+        "url": "https://docs.google.com/document/d/1zaqgwl0Fxjg8p5OO7bT1dpVBya1OzkzV-3DYq5DFTeA/edit?usp=sharing",
+        "archive": "about:blank"
+      }
+    ]
+  },
+  {
     "name": "Cizí jazyky",
     "workbooks": [
       {
@@ -91,7 +115,8 @@
         "name": "Informatika",
         "icon": "img/it.svg",
         "url": "https://docs.google.com/document/d/1FHmwiJ1_dsWD_hbjgDhfM83dWn1vDng1onN0XAZJSwQ/edit?usp=sharing",
-        "archive": "https://docs.google.com/document/d/17rsELaYrCND7j-vuwVsoyB-8a0SR-2wJcPPhjA7nnvE/edit?usp=sharing"
+        "archive": "https://docs.google.com/document/d/17rsELaYrCND7j-vuwVsoyB-8a0SR-2wJcPPhjA7nnvE/edit?usp=sharing",
+        "deprecated": true
       },
       {
         "name": "Hudebka",
