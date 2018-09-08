@@ -1,108 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="10mm"
-   height="10mm"
-   viewBox="0 0 512 512"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="biology.svg">
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="5.7969691"
-     inkscape:cy="14.795829"
-     inkscape:document-units="px"
-     inkscape:current-layer="center"
-     showgrid="false"
-     inkscape:snap-grids="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 254,150 0,327"
-       id="path3697"
-       inkscape:connector-curvature="0" />
-    <g
-       id="center"
-       transform="matrix(0.67624698,0.67624698,-0.67624698,0.67624698,238.75578,-159.50783)">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 268.91181,201.37903 C 410.75238,100.458 419.66297,342.37281 269.82402,238.78252"
-         id="path3648-8"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 224.42087,195.43885 C 123.49985,53.598281 365.41465,44.687686 261.82436,194.52664"
-         id="path3648"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 263.1824,243.57889 C 364.10344,385.41948 122.18861,394.33006 225.77891,244.4911"
-         id="path3648-8-3"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 221.72999,240.2634 C 79.889389,341.18444 70.978798,99.269601 220.81778,202.85991"
-         id="path3648-8-3-3"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <circle
-         style="fill:#ffffff;stroke:#000000;stroke-width:14.4497776"
-         id="path3643"
-         cx="244.03491"
-         cy="221.43883"
-         r="32" />
-    </g>
-    <path
-       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-       d="m 253.61385,374.24573 -28.28069,-17.33331 c -51.04344,-9.20905 -87.04803,13.8656 -96.70168,69.33327 33.93765,-30.31144 44.14812,-45.48456 91.228,-55.64908 z"
-       id="path3699"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:14.4497776px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-       d="m 258.63034,321.399 28.28069,-17.33331 c 51.04345,-9.20905 87.04804,13.8656 96.70169,69.33328 -33.93765,-30.31144 -44.14812,-45.48457 -91.22801,-55.64908 z"
-       id="path3699-1"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-  </g>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="386.75px" height="386.75px" viewBox="0 0 386.75 386.75" style="enable-background:new 0 0 386.75 386.75;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path d="M376.717,99.329c-6.755-1.51-13.967,3.125-15.372,9.421c-0.391,1.489-1.813,6.371-5.212,12.938l-91.104-91.102
+			c7.481-3.812,12.712-5.022,12.85-5.062c16.64-3.903,10.707-29.045-5.957-25.106c-1.032,0.252-102.057,26.625-85.457,170.831
+			c-6.632-0.432-13.243-0.64-19.731-0.64c-117.787,0-162.859,74.027-164.708,77.144c-8.812,14.855,13.501,27.352,22.133,13.24
+			c0.685-1.117,4.219-6.678,11.328-14.195l104.52,104.556c-7.446,7.044-13.024,10.604-14.081,11.253
+			c-14.661,8.73-1.567,30.744,13.114,22.218c3.513-2.102,85.434-52.386,76.51-184.503c105.631,12.262,160.172-41.383,170.873-85.563
+			C388.03,107.753,383.557,100.782,376.717,99.329z M187.878,254.381l-55.442-55.454c17.69-2.679,37.398-3.213,57.024-1.585
+			C191.127,217.272,190.592,236.433,187.878,254.381z M101.641,205.773l79.032,79.491c-7.914,23.425-17.519,39.163-24.28,47.047
+			L54.602,230.165C72.193,215.885,95.005,208.75,101.641,205.773z M211.141,121.294l54.104,54.301
+			c-15.937,1.525-33.777,0.991-52.464-1.525C210.204,155.059,209.646,137.318,211.141,121.294z M296.403,169.39l-79.39-78.735
+			c5.782-18.687,14.087-31.667,25.154-43.34l97.691,96.263l-1.038,1.291C323.274,159.923,303.032,168.267,296.403,169.39z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
 </svg>
