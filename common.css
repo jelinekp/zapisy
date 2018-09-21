@@ -3,7 +3,7 @@ body {
 }
 
 p {
-  font-family: Roboto, Verdana, Arial;
+  font-family: Arial;
   position: relative;
 }
 
@@ -47,7 +47,7 @@ td {
 }
 
 .link {
-  font-family: Roboto, Arial, Verdana;
+  font-family: Arial;
   position: relative;
   z-index: 2;
   display: inline-block;
@@ -220,7 +220,7 @@ td {
 }
 
 .exams-button-container {
-  font: Roboto, Arial;
+  font: Arial;
   padding-top: 16px;
   background-color: transparent;
   box-shadow: none;
@@ -456,11 +456,11 @@ td.zff-cell {
 }
 
 ul{
-   font-family: Roboto, Arial, Verdana;
+   font-family: Arial;
 }
 
 li{
-   font-family: Roboto, Arial, Verdana;
+   font-family: Arial;
 }
 
 .bolder{
@@ -468,7 +468,7 @@ li{
 }
 
 .back{
-   font-family: Roboto, Arial, Verdana;
+   font-family: Arial;
    font-size: 15px;
 }
 
