@@ -1,9 +1,9 @@
 body {
   background-color: #64B5F6;
+  font-family: Roboto, Verdana, Arial;
 }
 
 p {
-  font-family: Roboto, Verdana, Arial;
   position: relative;
 }
 
@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2 {
   left: 0px;
   width: 100%;
   text-align: center;
@@ -47,7 +47,6 @@ td {
 }
 
 .link {
-  font-family: Roboto, Arial, Verdana;
   position: relative;
   z-index: 2;
   display: inline-block;
@@ -455,20 +454,11 @@ td.zff-cell {
    padding: 0px 8px 1px 8px;
 }
 
-ul{
-   font-family: Roboto, Arial, Verdana;
-}
-
-li{
-   font-family: Roboto, Arial, Verdana;
-}
-
 .bolder{
    font-weight: bold;
 }
 
 .back{
-   font-family: Roboto, Arial, Verdana;
    font-size: 15px;
 }
 
