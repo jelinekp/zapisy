@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="theme-color" content="#64B5F6" />
+  <link rel="icon" type="image/png" href="img/icon-512.png" />
+  <link rel="manifest" href="manifest.json">
+  <title>Zápisy 3.0 (PWA)</title>
+  <script src="js/workbooks.js"></script>
+  <script src="js/exams.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/boot.js"></script>
+</head>
+<body onload="nav_load(); boot();">
+  <div id="toolbar">
+    <div id="tab-workbooks" class="toolbar-tab" onclick="nav_move('workbooks');">
+      <span>Zápisy</span>
+    </div>
+    <div id="tab-exams" class="toolbar-tab" onclick="nav_move('exams');">
+      <span>Písemky</span>
+    </div>
+  </div>
+  <div id="page-workbooks" class="page">
+    <table id="workbooks-table">
+    </table>
+  </div>
+  <div id="page-exams" class="page hidden">
+    <table id="exams-table">
+    </table>
+  </div>
+
+</body>
+</html>
