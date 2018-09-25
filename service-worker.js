@@ -1,14 +1,17 @@
-var cacheName = 'workbooks-basics-2-13';
+var cacheName = 'workbooks-basics-2-14';
 var filesToCache = [
   '/',
   '/index.html',
   '/service-worker.js',
   '/css/splash.css',
   '/css/base.css',
+  '/css/android.css',
+  '/css/ios.css',
   '/js/boot.js',
   '/js/workbooks.js',
   '/js/exams.js',
   '/js/navigation.js',
+  '/img/apple-152.png',
   '/img/icon-192.png',
   '/img/icon-512.png',
   '/img/icon-512-w.png'

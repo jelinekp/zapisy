@@ -1,6 +1,18 @@
 var platformCssElem; // Contains link element, change href to load platform-
                      // -specific CSS
 
+function getPlatformCssPath() {
+  var platform = window.navigator.platform;
+  var ua = window.navigator.userAgent;
+
+  if(['iPhone', 'iPad', 'iPod'].indexOf(platform) !== -1) {
+    return 'css/ios.css';
+  } else if (/Android/.test(ua)) {
+    return 'css/android.css';
+  }
+  return ''; // Don't override anything if we don't know where we run
+}
+
 function loadJSON(url, callback) {
   const request = new Request(url);
 
@@ -22,18 +34,11 @@ function loadJSON(url, callback) {
 }
 
 function boot() {
-  // Load base CSS used by all platforms
+  // Load platform-specific CSS, currently only Android
   var cssFrag = document.createElement("link");
   cssFrag.setAttribute("rel", "stylesheet");
   cssFrag.setAttribute("type", "text/css");
-  cssFrag.setAttribute("href", "css/base.css");
-  document.getElementsByTagName("head").item(0).appendChild(cssFrag);
-
-  // Load platform-specific CSS, currently only Android
-  cssFrag = document.createElement("link");
-  cssFrag.setAttribute("rel", "stylesheet");
-  cssFrag.setAttribute("type", "text/css");
-  cssFrag.setAttribute("href", "css/android.css");
+  cssFrag.setAttribute("href", getPlatformCssPath());
   document.getElementsByTagName("head").item(0).appendChild(cssFrag);
 
   // Store reference somewhere safe
