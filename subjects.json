@@ -64,5 +64,33 @@
   {
     "code": "Z",
     "name": "Zeměpis"
+  },
+  {
+    "code": "SPRG",
+    "name": "Seminář z programování"
+  },
+  {
+    "code": "SZSV",
+    "name": "Seminář ZSV"
+  },
+  {
+    "code": "SB",
+    "name": "Seminář z biologie"
+  },
+  {
+    "code": "SCh",
+    "name": "Seminář z chemie"
+  },
+  {
+    "code": "SZ",
+    "name": "Seminář ze zeměpisu"
+  },
+  {
+    "code": "SM",
+    "name": "Seminář z matematiky"
+  },
+  {
+    "code": "SAJ",
+    "name": "Seminář z angličtiny"
   }
 ]
