@@ -31,8 +31,9 @@ p {
 }
 
 #container {
-  max-width: 1200px;
-  width: 80%;
+  width: 90%;
+  max-width: 1090px;
+  margin-left: auto;
   margin-left: 80px;
   margin-right: auto;
   padding-bottom: 32px;
@@ -75,12 +76,12 @@ p {
   padding-bottom: 48px;
 }
 
-@media(max-width: 1600px) {
+@media {
   #containerHack {
     position: absolute;
     left: 25px;
     margin-top: 30px;
-    width: calc(100% - 350px);
+    width: calc(100% - 510px);
     margin-left: auto;
     margin-right: auto;
   }
