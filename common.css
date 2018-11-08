@@ -155,7 +155,7 @@ td {
 .exam-group {
   color: #000000;
   background-color: #ECECEC;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 7px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -167,7 +167,7 @@ td {
 .exam-date {
     color: #000000;
     background-color: #ECECEC;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 7px;
     padding-top: 4px;
     padding-bottom: 4px;
