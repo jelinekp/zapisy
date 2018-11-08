@@ -34,10 +34,7 @@ p {
 
 .link-text {
   padding-left: 32px;
-}
-
-.group-title {
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .subject-icon {
