@@ -37,6 +37,10 @@ p {
   font-weight: 500;
 }
 
+.link-archive-text {
+  top: 19px;
+}
+
 .subject-icon {
   display: none;
 }
