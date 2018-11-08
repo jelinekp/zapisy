@@ -31,8 +31,9 @@ p {
 }
 
 #container {
-  width: 85%;
-  margin-left: auto;
+  max-width: 1200px;
+  width: 80%;
+  margin-left: 80px;
   margin-right: auto;
   padding-bottom: 32px;
 }
