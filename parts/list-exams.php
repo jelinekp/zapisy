@@ -12,7 +12,7 @@ function assemble_list_exams($markup, $vars) {
   $output = '';
 
   $db = new PDO(
-    'mysql:host=' . Config::$db_host . ';dbname=' . Config::$db_name,
+                'mysql:host=' . Config::$db_host . ';dbname=' . Config::$db_name,
     Config::$db_user, Config::$db_pass
   );
   $query = $db->prepare('SELECT exams._ID, exams.exam_date, exams.exam_date_uc, exams.range, exams.subject, exams.grp, authors.name FROM exams INNER JOIN authors ON exams.author=authors.author_ID ORDER BY exam_date ASC;');
@@ -24,8 +24,7 @@ function assemble_list_exams($markup, $vars) {
     $part = 'item-exam';
 
     $eTime = strtotime($exam['exam_date']);
-    $dateStr = date('j.n.Y', $eTime) . ' ('
-      . get_diff($exam['exam_date']) . ')';
+    $dateStr = /*date('j.n.Y', $eTime) . */get_diff($exam['exam_date']);
     if(isset($exam['exam_date_uc']) && $exam['exam_date_uc'] == 1) {
       switch(mt_rand(0, 2)) {
         case 0: $dateStr = 'Asi ' . $dateStr; break;

@@ -1,5 +1,5 @@
 body {
-  background-color: #64B5F6;
+  background-color: #ECECEC;
   font-family: Roboto, Verdana, Arial;
 }
 
@@ -9,15 +9,22 @@ p {
 
 a {
   color: #616161;
-  text-decoration: none;
 }
 
-h1, h2 {
+h1 {
   left: 0px;
-  width: 100%;
-  text-align: center;
-  font-family: Arial;
-  font-size: 32px;
+  text-align: left;
+  margin-left: 15px;
+  font-size: 30px;
+  font-weight: black;
+}
+
+h2 {
+    left: 0px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: black;
+    
 }
 
 a:hover{
@@ -27,7 +34,7 @@ a:hover{
 
 table {
   width: 100%;
-  border-spacing: 4px;
+  border-spacing: 7px;
 }
 
 td {
@@ -37,6 +44,30 @@ td {
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
+
+/* Group */
+
+.groupTable {
+    width: 100%;
+    border-spacing: 15px;
+    box-shadow: none;
+}
+
+.group {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.group-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Workbook */
 
 .smoother {
   color: grey !important;
@@ -59,6 +90,7 @@ td {
   vertical-align: middle;
   color: black;
   padding: 16px 32px;
+  font-size: 20px;
 }
 
 .link:hover {
@@ -107,36 +139,57 @@ td {
   left: 16px;
   width: 32px;
   height: 32px;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #5D94F9;
 }
+
+/* exam */
 
 .exam-subject {
   color: black;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .exam-group {
-  color: #777777;
-  background-color: #e5e5e5;
-  border-radius: 8px;
-  padding: 4px;
-  margin-left: 8px;
+  color: #000000;
+  background-color: #ECECEC;
+  border-radius: 10px;
+  padding: 7px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   display: inline;
+  font-size: 12px;
+  float: right;
+}
+
+.exam-date {
+    color: #000000;
+    background-color: #ECECEC;
+    border-radius: 10px;
+    padding: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 5px;
+    display: inline;
+    font-size: 12px;
+    float: right;
 }
 
 .exam-range {
   color: black;
   text-decoration: none;
+  padding-top: 10px;
   display: block;
+  font-size: 14px;
 }
 
 .exam-item {
   color: black;
   text-decoration: none;
-  padding: 16px;
+  padding: 20px;
+  font-size: 13px;
 }
 
 .exam-item:hover {
@@ -218,19 +271,40 @@ td {
   font-size: 12px;
 }
 
+/* login logout add rip marku */
+
 .exams-button-container {
-  font: Roboto, Arial;
-  padding-top: 16px;
   background-color: transparent;
   box-shadow: none;
 }
 
 .exams-button {
+    margin-top: 20px;
   display: block;
   width: 100%;
   text-align: center;
   font-weight: bold;
-  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  color: #5D94F9;
+}
+
+.username {
+    margin-top: 40px;
+    float: right;
+    display: block;
+    left: 8px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.link-logout {
+    float: right;
+    right: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #5D94F9;
 }
 
 #exams-button:hover {
@@ -271,7 +345,7 @@ td {
 .modal-title {
   size: 18px;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: bold;
   display: block;
 }
 
@@ -380,13 +454,9 @@ td {
   cursor: pointer;
 }
 
-.exam-cell:hover .link-exam .exam-item {
-  background-color: rgba(127, 127, 127, 0.1);
-}
-
 .exam-author {
   color: #999999;
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   right: 16px;
   bottom: 16px;
@@ -407,38 +477,6 @@ td.zff-cell {
   text-align: center;
   width: 100%;
   display: inline-block;
-}
-
-.group {
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  background-color: #75C6FF;
-}
-
-.group-title {
-  display: inline-block;
-  margin-left: 8px;
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.username {
-  position: absolute;
-  left: 8px;
-  font-weight: normal;
-  color: white;
-}
-
-.link-logout {
-  position: absolute;
-  right: 8px;
-  font-weight: bold;
-  color: white;
-}
-
-.link-logout:hover {
-  color: white;
 }
 
 /*tutorial*/

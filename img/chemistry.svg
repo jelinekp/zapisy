@@ -1,199 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="10mm"
-   height="10mm"
-   viewBox="0 0 512 512"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="chemistry.svg">
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="18.994483"
-     inkscape:cy="15.853192"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:snap-grids="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:18px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 160,64 32,0 0,336 q 0,48 48,48 m 0,0 32,0 q 48,0 48,-48 m 0,0 0,-336 32,0"
-       id="path3350"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path3390"
-       d="m 196,196 128,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:12px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
-    <circle
-       style="fill:#000000"
-       id="path3394"
-       cx="224.38596"
-       cy="228.63161"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-6"
-       cx="296.491"
-       cy="240.14055"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-3"
-       cx="244.49101"
-       cy="254.73703"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-2"
-       cx="287.36823"
-       cy="269.33356"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-24"
-       cx="214.3858"
-       cy="312.21069"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-1"
-       cx="259.08749"
-       cy="342.31592"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-10"
-       cx="287.36819"
-       cy="355.08786"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-8"
-       cx="220.77176"
-       cy="370.59662"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-15"
-       cx="259.99979"
-       cy="382.45624"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-5"
-       cx="288.28046"
-       cy="411.6492"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-84"
-       cx="214.38579"
-       cy="411.64923"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-68"
-       cx="223.50861"
-       cy="267.50894"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-681"
-       cx="265.47345"
-       cy="220.0704"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-7"
-       cx="254.52608"
-       cy="288.49142"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-57"
-       cx="227.15771"
-       cy="335.01767"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-0"
-       cx="294.66644"
-       cy="322.24576"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-02"
-       cx="269.12262"
-       cy="314.03522"
-       r="8" />
-    <circle
-       style="fill:#000000"
-       id="path3394-29"
-       cx="241.7542"
-       cy="422.59656"
-       r="8" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:8"
-       id="path3509"
-       cx="283.26291"
-       cy="161.22835"
-       r="16" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:8"
-       id="path3509-5"
-       cx="237.19279"
-       cy="108.77224"
-       r="16" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:8"
-       id="path3509-50"
-       cx="282.80679"
-       cy="59.509121"
-       r="16" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:8"
-       id="path3509-0"
-       cx="231.7191"
-       cy="30.316164"
-       r="16" />
-  </g>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M465.439,361.551c-7.843,0-15.222,2.011-21.657,5.54l-98.37-83.826c4.029-10.69,6.24-22.264,6.24-34.346
+			c0-20.171-6.147-38.933-16.663-54.513l45.758-45.758c6.914,3.559,14.742,5.582,23.038,5.582c27.856,0,50.519-22.663,50.519-50.519
+			c0-27.856-22.663-50.52-50.519-50.52s-50.519,22.663-50.519,50.52c0,8.646,2.186,16.789,6.029,23.91l-44.735,44.735
+			c-16.662-13.212-37.716-21.115-60.584-21.115c-22.061,0-42.435,7.356-58.805,19.738L96.855,73.51
+			c3.544-6.902,5.559-14.714,5.559-22.992C102.413,22.663,79.749,0,51.893,0C24.037,0,1.374,22.663,1.374,50.519
+			c0,27.856,22.663,50.52,50.519,50.52c8.664,0,16.825-2.195,23.958-6.053l98.405,97.557C162.952,208.48,156.3,227.938,156.3,248.92
+			c0,21.966,7.291,42.261,19.576,58.595l-45.189,45.189c-6.913-3.559-14.742-5.582-23.038-5.582
+			c-27.856,0-50.52,22.663-50.52,50.519s22.663,50.52,50.52,50.52s50.519-22.663,50.519-50.52c0-8.646-2.186-16.789-6.029-23.91
+			l45.244-45.243c15.978,11.397,35.517,18.109,56.594,18.109c2.256,0,4.492-0.084,6.71-0.235l19.78,82.948
+			c-12.061,8.123-20.01,21.902-20.01,37.504c0,24.917,20.271,45.186,45.187,45.186s45.187-20.271,45.187-45.186
+			c0-23.597-18.184-43.016-41.275-45.007l-19.575-82.088c15.904-6.329,29.762-16.721,40.293-29.888l93.425,79.613
+			c-2.218,5.332-3.448,11.172-3.448,17.296c0,24.917,20.271,45.186,45.187,45.186c24.917,0,45.187-20.271,45.187-45.187
+			S490.354,361.551,465.439,361.551z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
 </svg>

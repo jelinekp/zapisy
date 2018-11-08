@@ -15,13 +15,6 @@
         "archive": "https://docs.google.com/document/d/1NypN22Yzmnl_LSmDuDCWn2vmzmCxnl0BGsE-IDWgrKs/edit?usp=sharing"
       },
       {
-        "name": "Chemie",
-        "icon": "img/chemistry.svg",
-        "url": "https://docs.google.com/document/d/1-741ksaGohohnrOl3DeOYXY7vUExp-zuFSfiQ4slhlQ/edit?usp=sharing",
-        "archive": "https://docs.google.com/document/d/1ZR3U6O_NeN89G-oOtUytWY1vrU0LuIlLzB5bgqa0S00/edit?usp=sharing",
-        "deprecated": true
-      },
-      {
         "name": "Zeměpis",
         "icon": "img/geography.svg",
         "url": "https://docs.google.com/document/d/1L1SoYbA0dpFODTf1yxNGh6IK-TSAOEgjg0gXegFgWqQ/edit?usp=sharing",
@@ -111,6 +104,13 @@
   {
     "name": "Odpad",
     "workbooks": [
+        {
+            "name": "Chemie",
+            "icon": "img/chemistry.svg",
+            "url": "https://docs.google.com/document/d/1-741ksaGohohnrOl3DeOYXY7vUExp-zuFSfiQ4slhlQ/edit?usp=sharing",
+            "archive": "https://docs.google.com/document/d/1ZR3U6O_NeN89G-oOtUytWY1vrU0LuIlLzB5bgqa0S00/edit?usp=sharing",
+            "deprecated": true
+        },
       {
         "name": "Informatika",
         "icon": "img/it.svg",
