@@ -15,8 +15,8 @@ function assemble_list_exams($markup, $vars) {
                 'mysql:host=' . Config::$db_host . ';dbname=' . Config::$db_name,
     Config::$db_user, Config::$db_pass
   );
-  $query = $db->prepare('SELECT exams._ID, exams.exam_date, exams.exam_date_uc, exams.range, exams.subject, exams.grp, authors.name FROM exams INNER JOIN authors ON exams.author=authors.author_ID ORDER BY exam_date ASC;');
-  $query->execute();
+  $query = $db->prepare('SELECT exams._ID, exams.exam_date, exams.exam_date_uc, exams.range, exams.subject, exams.grp, authors.name FROM exams INNER JOIN authors ON exams.author=authors.author_ID WHERE exams.class=? ORDER BY exam_date ASC;');
+  $query->execute(array(Assembler::$prefix));
   $exams = $query->fetchAll();
   $query = $db->prepare('SELECT * FROM exam_files WHERE exam_ID=?');
   $style = get_user() === null ? "display: none;" : "";
