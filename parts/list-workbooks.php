@@ -3,7 +3,7 @@
 function assemble_list_workbooks($markup, $vars) {
   $output = '';
   if(isset($_COOKIE['theme']) && $_COOKIE['theme'] == 'classic') {
-    foreach(json_decode(file_get_contents('workbooks.json'), true) as $workbook) {
+    foreach(Assembler::load_json('workbooks.json', true) as $workbook) {
       $part = 'item-workbook';
       if(isset($workbook["deprecated"]) && $workbook["deprecated"] == true) {
         $part = 'item-workbook-deprecated';
@@ -17,7 +17,7 @@ function assemble_list_workbooks($markup, $vars) {
       ));
     }
   } else {
-    foreach(json_decode(file_get_contents('workbooks-grouped.json'), true) as $group) {
+    foreach(Assembler::load_json('workbooks-grouped.json', true) as $group) {
       $output .= Assembler::assemble('item-group', array(
         'group'       => $group
       ));
