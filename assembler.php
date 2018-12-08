@@ -44,7 +44,7 @@ class Assembler {
   static function load_json($name, bool $is_config) {
     return json_decode(
       file_get_contents(
-        ($is_config ? static::$prefix : '') . $name
+        ($is_config ? static::$prefix . '/' : '') . $name
       ),
       true
     );
