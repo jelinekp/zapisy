@@ -1,0 +1,121 @@
+[
+  {
+    "name": "ZSV",
+    "icon": "img/civics.svg",
+    "fullname": "Základy společenských věd",
+    "url": "https://docs.google.com/document/d/11Xnw-qA_qtXr-bPacrZOf_DCTxsZX0LZZd0yGPwR-R8/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1gQiBD1VzRBDIvppEupXyZX1AlDgZ0O4EdKwSwiWX-MQ/edit?usp=sharing"
+  },
+  {
+    "name": "Biologie",
+    "icon": "img/biology.svg",
+    "url": "https://docs.google.com/document/d/11pIdgU1CwxnmGv9BXsAPKL5bzJEh58C_ECT8nr1AIVo/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1LQuA04JB-Pt93-8HwyjrermeyFmZLR65Hdl-Cxypl-U/edit?usp=sharing"
+  },
+  {
+    "name": "Dějepis",
+    "icon": "img/history.svg",
+    "url": "https://docs.google.com/document/d/128VQPB620GnzLtioSXTzquJqhQJ6-Iyhjop-5D8EI2I/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1NypN22Yzmnl_LSmDuDCWn2vmzmCxnl0BGsE-IDWgrKs/edit?usp=sharing"
+  },
+  {
+    "name": "Zeměpis",
+    "icon": "img/geography.svg",
+    "url": "https://docs.google.com/document/d/1L1SoYbA0dpFODTf1yxNGh6IK-TSAOEgjg0gXegFgWqQ/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1U19KWUzK0FfByUadEXOWO3Ejg9lfeRY5xnMQ4KtAHvE/edit?usp=sharing"
+  },
+  {
+    "name": "Literatura",
+    "icon": "img/literature.svg",
+    "url": "https://docs.google.com/document/d/1FmbhmTOfhgsEAi9FmgA8VLChvt0355eY4TcOX4DhLpM/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1LZtpoj1WoubWCbYeE_D2-_bORzAYk9F8lZ_g3BJMI3g/edit?usp=sharing"
+  },
+  {
+    "name": "Sloh",
+    "icon": "img/style.svg",
+    "url": "https://docs.google.com/document/d/1AK9mJlQhzhpIunhtqecEUNzbokpR5uStgkBNeyBtreU/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1pzj8-bBdog3IiYJejcChgrNlzHDecpygNy-Hjuzjc0A/edit?usp=sharing"
+  },
+  {
+    "name": "Mluvnice",
+    "icon": "img/grammar.svg",
+    "url": "https://docs.google.com/document/d/1bwWybOcZKQMX4_FIY6pSdY69u9Ufsx0WbsOrxYIQAeU/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1nlu-f8s6GJ3ulLsgESeMFBDy2HCZJfXjn_6Qku_Vl_M/edit?usp=sharing"
+  },
+  {
+    "name": "Seminář ze ZSV",
+    "icon": "img/civics.svg",
+    "url": "https://docs.google.com/document/d/1o4NX9xDaOXfltx7DYb6IRtI2i6C0DA4rgIYbIUBNrlE/edit?usp=sharing",
+    "archive": "about:blank"
+  },
+  {
+    "name": "Seminář z dějepisu",
+    "icon": "img/history.svg",
+    "url": "https://docs.google.com/document/d/1vDvttlIycQbIYIBN3omKAnVCw2vsGagc6P6o-T4JF6g/edit?usp=sharing",
+    "archive": "about:blank"
+  },
+  {
+    "name": "Programování",
+    "icon": "img/it.svg",
+    "url": "https://docs.google.com/document/d/1zaqgwl0Fxjg8p5OO7bT1dpVBya1OzkzV-3DYq5DFTeA/edit?usp=sharing",
+    "archive": "about:blank"
+  },
+  {
+    "name": "Angličtina (ang2)",
+    "icon": "img/english.svg",
+    "fullname": "Anglický jazyk (ang2)",
+    "url": "https://docs.google.com/document/d/1XuNTgI0PJzJjOjJzDq6APlSPEfydXxBnLipjqGecY8Y/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1rlUfgCx4XP7UERnS4w8sASs7ogq7xycnwEFxYR1UEGw/edit?usp=sharing"
+  },
+  {
+    "name": "Němčina (něm1)",
+    "icon": "img/german.svg",
+    "fullname": "Německý jazyk (něm1)",
+    "url": "https://docs.google.com/document/d/1-8aBG1-HjBW-8F3t6C0cWV2Fo5AMQ6-BDWTn53H7JFk/edit",
+    "archive": "https://docs.google.com/document/d/1Zj5YNgefXGvefQo0mgSZyTgzeE_uLCcmd0tEGlE84p0/edit?usp=sharing"
+  },
+  {
+    "name": "Němčina (ang2)",
+    "icon": "img/german.svg",
+    "fullname": "Německý jazyk (ang2)",
+    "url": "https://docs.google.com/document/d/111MqVG-OGiFX2BlONcWz-U-2yAo4T_F1OXT6ATa8v-U/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1Ajk1-kWHjb516-enRL8SN8q9L9_PByn2QDqEJLIMZAs/edit?usp=sharing"
+  },
+  {
+    "name": "Informatika",
+    "icon": "img/it.svg",
+    "url": "https://docs.google.com/document/d/1FHmwiJ1_dsWD_hbjgDhfM83dWn1vDng1onN0XAZJSwQ/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/17rsELaYrCND7j-vuwVsoyB-8a0SR-2wJcPPhjA7nnvE/edit?usp=sharing",
+    "deprecated": true
+  },
+  {
+    "name": "Hudebka",
+    "icon": "img/music.svg",
+    "fullname": "Hudební výchova",
+    "url": "https://docs.google.com/document/d/10YuOxsS5yC_9A6VJwwiE6U3U0lbNFIR-CXEQXkMeAmY/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1EStBCZIca0VXVbwYNjSdIhCaRgiFC_zP9JXjWbp3w5g/edit?usp=sharing",
+    "deprecated": true
+  },
+  {
+    "name": "Výtvarka",
+    "icon": "img/art.svg",
+    "fullname": "Výtvarná výchova",
+    "url": "https://docs.google.com/document/d/1OLdLeODhiI7gGxkwv6Kb7TkS08wTfZq-BASPdHBu_wY/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/13jj_yNOjDibWaxlB4c042pfRM4l7a-r4uKFfUj9L71A/edit?usp=sharing",
+    "deprecated": true
+  },
+  {
+    "name": "Chemie",
+    "icon": "img/chemistry.svg",
+    "url": "https://docs.google.com/document/d/1-741ksaGohohnrOl3DeOYXY7vUExp-zuFSfiQ4slhlQ/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1ZR3U6O_NeN89G-oOtUytWY1vrU0LuIlLzB5bgqa0S00/edit?usp=sharing",
+    "deprecated": true
+  },
+  {
+    "name": "Fyzika",
+    "icon": "img/physics.svg",
+    "url": "https://docs.google.com/document/d/10JMnsnZw1vxEjkExBsaMNE3SVM5g3ulGC3A22YOtgvg/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1lPdewGmQFJtkmm0LnYTNqGhzORa57yPgvS7aT7iBjLk/edit?usp=sharing",
+    "deprecated": true
+  }
+]
