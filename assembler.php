@@ -6,6 +6,7 @@ class Assembler {
   private static $css = array();
   private static $js = array();
   
+  static $prefix = '';
   static $vals = null;
 
   private static function assemble_css() {
@@ -24,9 +25,9 @@ class Assembler {
     return $str;
   }
 
-  private static function makeParts() {
+  private static function make_parts() {
     $partlist = array();
-    foreach(json_decode(file_get_contents('parts/parts.json'), true) as $part) {
+    foreach(static::load_json('parts/parts.json', false) as $part) {
       if(isset($part['js'])) {
         static::$js[] = $part['js'];
       }
@@ -40,13 +41,21 @@ class Assembler {
     static::$parts = $partlist;
   }
 
+  static function load_json($name, bool $is_config) {
+    return json_decode(
+      file_get_contents(
+        ($is_config ? static::$prefix : '') . $name
+      )
+    );
+  }
+
   static function assemble(string $part, $vars = array()) {
     if(static::$parts === null) {
-      static::makeParts();
+      static::make_parts();
     }
 
     if(static::$vals == null) {
-      static::$vals = json_decode(file_get_contents('values.json'), true);
+      static::$vals = static::load_json('values.json', true);
     }
 
     if(!isset(static::$parts[$part])) {
@@ -74,6 +83,10 @@ class Assembler {
     $output = str_replace('$PART_JS$', static::assemble_js(), $output);
 
     return $output;
+  }
+
+  static function set_prefix($prefix) {
+    static::$prefix = $prefix;
   }
 }
 
