@@ -33,13 +33,14 @@ function get_user() {
       "mysql:host=" . Config::$db_host . ";dbname=" . Config::$db_name,
       Config::$db_user, Config::$db_pass
     );
-    $query = $sql->prepare('SELECT name,author_ID FROM authors WHERE pass=?');
+    $query = $sql->prepare('SELECT name,author_ID,class FROM authors WHERE pass=?');
     $query->execute([$_COOKIE['code']]);
     $res = $query->fetchAll();
     if(count($res) == 1) {
       return array(
-        'name' => $res[0]['name'],
-        'id'   => $res[0]['author_ID']
+        'name'  => $res[0]['name'],
+        'id'    => $res[0]['author_ID'],
+        'class' => $res[0]['class']
       );
     }
   }
