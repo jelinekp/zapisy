@@ -1,0 +1,33 @@
+[
+  {
+    "name": "ZSV",
+    "icon": "img/civics.svg",
+    "fullname": "Základy společenských věd",
+    "url": "https://docs.google.com/document/d/11sfTWzCwhwalqf-DKcm_1ypuPXCFm_rT9KxquE7h1Bc/edit",
+    "archive": "https://docs.google.com/document/d/1ecrrCpGPpnq-pUrH4oA0u_yyCJOShPqsdY0nJUXajzw/edit?usp=sharing"
+  },
+  {
+    "name": "Dějepis",
+    "icon": "img/history.svg",
+    "url": "https://docs.google.com/document/d/1HN45JwT7RKJ8pMB_B1ADGDJ2owDJ_q6mjBT1cUgz_zE/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1EpvZz5dYkBraABe4NyuOjGpb-noBF5zysREraFVQTLo/edit?usp=sharing"
+  },
+  {
+    "name": "Literatura",
+    "icon": "img/literature.svg",
+    "url": "https://docs.google.com/document/d/1Zb972rVnAnfJRDPfHSoFGXNIjEpAsMMaOXgLx11_bjI/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1NGmdro29sApRev0ZkndW5C7d0DIgTei21L7Ps71JNT4/edit?usp=sharing"
+  },
+  {
+    "name": "Sloh",
+    "icon": "img/style.svg",
+    "url": "https://docs.google.com/document/d/1obTVnjT2semcFdE48Cpes4zXPgbhwv3k59g_4QdKOh4/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1662pdU9lzX3c8VA2DVOMlGu0o_TGpIrDnMiYSdRfXVI/edit?usp=sharing"
+  },
+  {
+    "name": "Mluvnice",
+    "icon": "img/grammar.svg",
+    "url": "https://docs.google.com/document/d/1nJ8NHtPAWkEZpoxh6g_RRicwEcQw3uyqreupdJHv2Ic/edit?usp=sharing",
+    "archive": "https://docs.google.com/document/d/1uK8Zjrc5VtMfiZmSbDlqJTJYAlNlxzDM6MwYPKtP0BU/edit?usp=sharing"
+  }
+]

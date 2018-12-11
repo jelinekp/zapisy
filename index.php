@@ -4,7 +4,8 @@ require_once "assembler.php";
 $classes = [
   '16e',
   '14b',
-  '14a'
+  '14a',
+  '17e'
 ];
 
 if(isset($_GET['class']) && in_array($_GET['class'], $classes)) {
