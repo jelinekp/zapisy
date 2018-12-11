@@ -18,9 +18,8 @@ if(isset($_POST["sent"]) && $user !== null) {
   $query = $db->prepare("INSERT INTO exams (`subject`, `range`, `exam_date`, `notes`, `author`, `grp`, `class`) VALUES (?, ?, ?, ?, ?, ?, ?)");
   $subname = strpos($_POST["subject"], '(') != 0 ? substr($_POST["subject"], 0, strpos($_POST["subject"], '(')) : substr($_POST["subject"], 0, strpos($_POST["subject"], ';'));
   $query->execute(array($subname, $_POST["range"], date("Y-m-d", $date), $_POST["notes"], $user['id'], substr($_POST["subject"], strpos($_POST["subject"], ';') + 1), $user['class']));
-  header("Location: $srvRoot");
-} else {
-  header("Location: $srvRoot");
 }
+
+header("Location: $srvRoot?class=" . $user['class']);
 
 ?>
