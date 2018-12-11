@@ -15,7 +15,7 @@ if(isset($_GET['v'])) {
   }
 }
 
-$query = $db->prepare("SELECT exams.*, authors.name as author_name FROM exams INNER JOIN authors ON exams.author = authors.author_ID ORDER BY exam_date ASC;");
+$query = $db->prepare("SELECT exams.*, authors.name as author_name FROM exams INNER JOIN authors ON exams.author = authors.author_ID WHERE exams.class='16e' ORDER BY exam_date ASC;");
 $query->execute();
 $exams = $query->fetchAll();
 
