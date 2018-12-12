@@ -14,6 +14,7 @@ $db = new PDO(
 if(isset($_POST["id"]) && $user !== null) {
   $query = $db->prepare("DELETE FROM exams WHERE _ID = ?");
   $query->execute(array($_POST["id"]));
+  header("Location: $srvRoot/?class=" . $user['class']);
 }
 
 header("Location: $srvRoot");
