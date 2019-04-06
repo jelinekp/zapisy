@@ -8,6 +8,8 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteRule "exams\.json" "exams-gen\.php" [PT]
 RewriteRule "zff\.json" "zff-gen\.php" [PT]
 
+RewriteRule "bazantak" "https://docs.google.com/document/d/1TjiFPznOCrTW44Z5vVYksdzS6BUD-9mpKsENHoWIPLI/edit?usp=drivesdk" [R=301]
+
 <FilesMatch "\.(gif|jpg|png|js|svg|css)$">
   ExpiresActive On
   ExpiresDefault "access plus 10 years"
