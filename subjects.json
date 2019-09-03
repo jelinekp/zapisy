@@ -70,8 +70,12 @@
     "name": "Seminář z programování"
   },
   {
-    "code": "SZSV",
-    "name": "Seminář ZSV"
+    "code": "SZSV (D)",
+    "name": "Seminář ZSV (Dřímal)"
+  },
+  {
+    "code": "SZSV (K)",
+    "name": "Seminář ZSV (Krejčíř)"
   },
   {
     "code": "SB",
@@ -90,7 +94,23 @@
     "name": "Seminář z matematiky"
   },
   {
+    "code": "SVM",
+    "name": "Seminář z vyšší matematiky"
+  },
+  {
     "code": "SAJ",
     "name": "Seminář z angličtiny"
+  },
+  {
+    "code": "SAK",
+    "name": "Seminář z anglické konverzace"
+  },
+  {
+    "code": "SZEP",
+    "name": "Seminář z práva a ekonomie"
+  },
+   {
+    "code": "SIT",
+    "name": "Seminář z informatiky"
   }
 ]
