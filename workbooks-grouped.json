@@ -56,10 +56,16 @@
     "name": "Semináře",
     "workbooks": [
       {
-        "name": "Seminář ze ZSV",
+        "name": "Seminář ze ZSV (Dřímal)",
         "icon": "img/civics.svg",
         "url": "https://docs.google.com/document/d/1o4NX9xDaOXfltx7DYb6IRtI2i6C0DA4rgIYbIUBNrlE/edit?usp=sharing",
-        "archive": "about:blank"
+        "archive": "https://docs.google.com/document/d/11yK1wTJFikLXusg9iQp491hjKVA8cfINMMo-AaHjZj0/edit?usp=sharing"
+      },
+      {
+    "name": "Seminář ze ZSV (Krejčíř)",
+    "icon": "img/civics.svg",
+    "url": "https://docs.google.com/document/d/1nhdUun_9nc1sU6orGnBGQd6xinE1EeEfOQOPePFEKFQ/edit?usp=sharing",
+    "archive": "about:blank"
       },
       {
         "name": "Seminář z dějepisu",
